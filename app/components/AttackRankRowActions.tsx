@@ -129,7 +129,7 @@ export default function AttackRankRowActions({ entry }: { entry: AttackRankEntry
   }
 
   return (
-    <div className="flex items-center justify-center gap-1">
+    <div className="flex items-center justify-center gap-2">
       <button
         type="button"
         title="Editar"
@@ -138,7 +138,7 @@ export default function AttackRankRowActions({ entry }: { entry: AttackRankEntry
           setForm(toForm(entry));
           setOpen(true);
         }}
-        className="px-2 py-1 rounded bg-black/30 border border-white/10 hover:bg-black/50 disabled:opacity-50"
+        className="w-9 h-9 lg:w-10 lg:h-10 rounded bg-black/30 border border-white/10 hover:bg-black/50 disabled:opacity-50 text-base lg:text-lg"
         disabled={loading}
       >
         ✏️
@@ -148,7 +148,7 @@ export default function AttackRankRowActions({ entry }: { entry: AttackRankEntry
         title="Excluir"
         aria-label="Excluir"
         onClick={onDelete}
-        className="px-2 py-1 rounded bg-black/30 border border-white/10 hover:bg-rose-500/20 hover:border-rose-400/30 disabled:opacity-50"
+        className="w-9 h-9 lg:w-10 lg:h-10 rounded bg-black/30 border border-white/10 hover:bg-rose-500/20 hover:border-rose-400/30 disabled:opacity-50 text-base lg:text-lg"
         disabled={loading}
       >
         ✖

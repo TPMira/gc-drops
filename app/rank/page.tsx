@@ -51,12 +51,12 @@ export default async function RankPage() {
       />
 
       {/* Camada 3: Conteúdo */}
-      <div className="relative z-10 max-w-5xl mx-auto p-6 scale-150">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-8">
         <div className="mb-6 rounded-lg border border-white/10 bg-black/25 backdrop-blur">
           <div className="px-4 py-3 flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold">Rank de Ataque da Genesis</h1>
-              <p className="text-sm text-gray-300 mt-1">
+              <h1 className="text-3xl sm:text-4xl font-bold">Rank de Ataque da Genesis</h1>
+              <p className="text-base sm:text-lg text-gray-300 mt-1">
                 Pontuação baseada apenas em: <b>Ataque</b>, <b>Acerto Crítico</b>,{" "}
                 <b>Dano Crítico</b>, <b>Ataque Especial</b> e <b>Dano pelas Costas</b>.
               </p>
@@ -84,19 +84,19 @@ export default async function RankPage() {
           </div>
         ) : (
           <div className="overflow-x-auto rounded-lg border border-white/10 bg-black/20 backdrop-blur">
-            <table className="w-full border-collapse text-sm">
+            <table className="w-full border-collapse text-sm sm:text-[15px] lg:text-base xl:text-lg leading-6">
               <thead className="sticky top-0 z-10">
-                <tr className="bg-black/50 backdrop-blur">
-                  <th className="border border-white/10 p-2 text-center">#</th>
-                  <th className="border border-white/10 p-2 text-left">Name</th>
-                  <th className="border border-white/10 p-2 text-center">Char</th>
-                  <th className="border border-white/10 p-2 text-right"> ⚔️ Atk</th>
-                  <th className="border border-white/10 p-2 text-right"> 🎯 Crit%</th>
-                  <th className="border border-white/10 p-2 text-right"> 💥 Dano Crit%</th>
-                  <th className="border border-white/10 p-2 text-right"> ✨ Atk Esp</th>
-                  <th className="border border-white/10 p-2 text-right"> 🗡️ Costas%</th>
-                  <th className="border border-white/10 p-2 text-right"> 🏆 Score</th>
-                  <th className="border border-white/10 p-2 text-center">Ações</th>
+                <tr className="bg-black/60 backdrop-blur text-zinc-100">
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">#</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-left">Name</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">Char</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> ⚔️ Atk</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> 🎯 Crit%</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> 💥 Dano Crit%</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> ✨ Atk Esp</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> 🗡️ Costas%</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> 🏆 Score</th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">Ações</th>
                 </tr>
               </thead>
               <tbody>
@@ -105,33 +105,33 @@ export default async function RankPage() {
                     key={e.id}
                     className={idx % 2 === 0 ? "bg-white/5" : "bg-transparent"}
                   >
-                    <td className="border border-white/10 p-2 text-center">{idx + 1}</td>
-                    <td className="border border-white/10 p-2 text-left">
-                      <div className="font-medium text-zinc-100">{e.name}</div>
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">{idx + 1}</td>
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-left">
+                      <div className="font-semibold text-zinc-100">{e.name}</div>
                       {/* {e.updatedAt ? (
                         <div className="text-xs text-gray-400">
                           {new Date(e.updatedAt).toLocaleString()}
                         </div>
                       ) : null} */}
                     </td>
-                    <td className="border border-white/10 p-2 text-center text-gray-200">
-                      <CharacterIcon character={e.character} size={34} />
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center text-gray-200">
+                      <CharacterIcon character={e.character} size={38} />
                     </td>
-                    <td className="border border-white/10 p-2 text-right">{e.stats.attack}</td>
-                    <td className="border border-white/10 p-2 text-right">
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">{e.stats.attack}</td>
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">
                       {e.stats.critChancePct.toFixed(2)}%
                     </td>
-                    <td className="border border-white/10 p-2 text-right">
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">
                       {e.stats.critDamagePct.toFixed(2)}%
                     </td>
-                    <td className="border border-white/10 p-2 text-right">{e.stats.specialAttack}</td>
-                    <td className="border border-white/10 p-2 text-right">
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">{e.stats.specialAttack}</td>
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">
                       {e.stats.backAttackDamagePct.toFixed(2)}%
                     </td>
-                    <td className="border border-white/10 p-2 text-right font-semibold text-amber-200">
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right font-bold text-amber-200 tabular-nums">
                       {Math.round(e.score).toLocaleString()}
                     </td>
-                    <td className="border border-white/10 p-2 text-center">
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">
                       <AttackRankRowActions entry={e as any} />
                     </td>
                   </tr>
