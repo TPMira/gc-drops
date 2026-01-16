@@ -159,7 +159,7 @@ export default function DuoBoard({ initialQueues }: Props) {
                   </td>
                   <td className="border border-white/10 p-2">
                     <span className="px-2 py-1 rounded bg-blue-500/10 border border-blue-400/20 text-blue-200 text-xs">
-                      {q.lookingFor} a
+                      {q.lookingFor}
                     </span>
                   </td>
                   <td className="border border-white/10 p-2 text-gray-400">{fmtTime(q.createdAt)}</td>
