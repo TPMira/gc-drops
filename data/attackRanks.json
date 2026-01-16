@@ -1,0 +1,67 @@
+[
+  {
+    "id": "atk_1768096703455_818",
+    "name": "Mira",
+    "character": "Kallia",
+    "stats": {
+      "attack": 43617,
+      "critChancePct": 118.27,
+      "critDamagePct": 985.06,
+      "specialAttack": 27232,
+      "backAttackDamagePct": 83.23
+    },
+    "updatedAt": "2026-01-11T01:58:23.455Z"
+  },
+  {
+    "id": "atk_1768150580934_873",
+    "name": "Mira2",
+    "character": "Lupus",
+    "stats": {
+      "attack": 36299,
+      "critChancePct": 120.78,
+      "critDamagePct": 797.87,
+      "specialAttack": 23607,
+      "backAttackDamagePct": 76.74
+    },
+    "updatedAt": "2026-01-11T16:56:20.934Z"
+  },
+  {
+    "id": "atk_1768150890093_965",
+    "name": "Mira",
+    "character": "Holy",
+    "stats": {
+      "attack": 35109,
+      "critChancePct": 97.58,
+      "critDamagePct": 833.22,
+      "specialAttack": 20037,
+      "backAttackDamagePct": 56.57
+    },
+    "updatedAt": "2026-01-11T17:01:30.093Z"
+  },
+  {
+    "id": "atk_1768397662566_453",
+    "name": "Kuma",
+    "character": "Lupus",
+    "stats": {
+      "attack": 39703,
+      "critChancePct": 117.98,
+      "critDamagePct": 1016.45,
+      "specialAttack": 30112,
+      "backAttackDamagePct": 89.54
+    },
+    "updatedAt": "2026-01-14T13:34:22.566Z"
+  },
+  {
+    "id": "atk_1768397723181_347",
+    "name": "Samuel",
+    "character": "Lupus",
+    "stats": {
+      "attack": 37171,
+      "critChancePct": 117.44,
+      "critDamagePct": 1011.81,
+      "specialAttack": 29000,
+      "backAttackDamagePct": 87.61
+    },
+    "updatedAt": "2026-01-14T13:35:23.181Z"
+  }
+]

@@ -1,0 +1,43 @@
+import { NextResponse } from "next/server";
+import { readJson } from "@/lib/jsondb";
+
+export async function GET() {
+  const characters = readJson("characters.json");
+  const maps = readJson("maps.json");
+  const items = readJson("items.json");
+  const runs = readJson("runs.json");
+
+  const totalRuns = runs.length;
+
+  // Contador por item
+  const counts: Record<string, number> = {};
+
+interface Item {
+    id: number | string;
+    name: string;
+}
+
+interface Run {
+    itemId?: number | string;
+}
+
+runs.forEach((run: Run) => {
+    if (run.itemId) {
+        const it = items.find((i: Item) => i.id === run.itemId);
+        if (it) {
+            counts[it.name] = (counts[it.name] || 0) + 1;
+        }
+    }
+});
+
+  const stats = Object.entries(counts).map(([item, count]) => ({
+    item,
+    count,
+    percentage: ((count / totalRuns) * 100).toFixed(2) + "%"
+  }));
+
+  return NextResponse.json({
+    totalRuns,
+    stats
+  });
+}

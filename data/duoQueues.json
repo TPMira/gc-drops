@@ -1,0 +1,29 @@
+[
+  {
+    "id": "dq_calnat_1",
+    "title": "Duo Calnat",
+    "map": "Calnat",
+    "lookingFor": "DPS",
+    "note": "Foco em clear rápido. Sem rage.",
+    "leader": { "name": "Mira", "character": "Kallia" },
+    "createdAt": "2026-01-11T01:00:00.000Z"
+  },
+  {
+    "id": "dq_calnat_2",
+    "title": "Duo Calnat (farm)",
+    "map": "Calnat",
+    "lookingFor": "SUP",
+    "note": "Farm 30min. Chamem no chat.",
+    "leader": { "name": "Mira2", "character": "Lupus" },
+    "createdAt": "2026-01-11T01:10:00.000Z"
+  },
+  {
+    "id": "dq_torre_1",
+    "title": "Duo Torre da Extinção",
+    "map": "Torre da Extinção",
+    "lookingFor": "ANY",
+    "note": "Só fechar daily.",
+    "leader": { "name": "HolyMain", "character": "Holy" },
+    "createdAt": "2026-01-11T01:15:00.000Z"
+  }
+]

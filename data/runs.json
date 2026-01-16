@@ -1,0 +1,4062 @@
+[
+  {
+    "id": "run_1765297482287_14",
+    "characterId": "char_24",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:24:42.287Z"
+  },
+  {
+    "id": "run_1765297497266_100",
+    "characterId": "char_24",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:24:57.266Z"
+  },
+  {
+    "id": "run_1765297563712_221",
+    "characterId": "char_24",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:26:03.712Z"
+  },
+  {
+    "id": "run_1765298268685_60",
+    "characterId": "char_15",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:37:48.686Z"
+  },
+  {
+    "id": "run_1765298327774_194",
+    "characterId": "char_15",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:38:47.774Z"
+  },
+  {
+    "id": "run_1765298439293_195",
+    "characterId": "char_15",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:40:39.293Z"
+  },
+  {
+    "id": "run_1765298546086_800",
+    "characterId": "char_11",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:42:26.086Z"
+  },
+  {
+    "id": "run_1765298651051_86",
+    "characterId": "char_11",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:44:11.051Z"
+  },
+  {
+    "id": "run_1765298755103_659",
+    "characterId": "char_11",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:45:55.103Z"
+  },
+  {
+    "id": "run_1765298876269_669",
+    "characterId": "char_5",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:47:56.269Z"
+  },
+  {
+    "id": "run_1765299072071_578",
+    "characterId": "char_5",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:51:12.071Z"
+  },
+  {
+    "id": "run_1765299184028_274",
+    "characterId": "char_5",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T16:53:04.028Z"
+  },
+  {
+    "id": "run_1765299305344_880",
+    "characterId": "char_8",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:55:05.344Z"
+  },
+  {
+    "id": "run_1765299412445_931",
+    "characterId": "char_8",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:56:52.445Z"
+  },
+  {
+    "id": "run_1765299521962_931",
+    "characterId": "char_8",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T16:58:41.962Z"
+  },
+  {
+    "id": "run_1765300108576_98",
+    "characterId": "char_6",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:08:28.576Z"
+  },
+  {
+    "id": "run_1765300276434_335",
+    "characterId": "char_6",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:11:16.434Z"
+  },
+  {
+    "id": "run_1765300380203_270",
+    "characterId": "char_6",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:13:00.203Z"
+  },
+  {
+    "id": "run_1765300485882_602",
+    "characterId": "char_10",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:14:45.882Z"
+  },
+  {
+    "id": "run_1765300598354_966",
+    "characterId": "char_10",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:16:38.354Z"
+  },
+  {
+    "id": "run_1765300698211_258",
+    "characterId": "char_10",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:18:18.211Z"
+  },
+  {
+    "id": "run_1765300811782_398",
+    "characterId": "char_14",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:20:11.782Z"
+  },
+  {
+    "id": "run_1765300916542_703",
+    "characterId": "char_14",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:21:56.542Z"
+  },
+  {
+    "id": "run_1765301017634_950",
+    "characterId": "char_14",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:23:37.634Z"
+  },
+  {
+    "id": "run_1765301129026_814",
+    "characterId": "char_17",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:25:29.026Z"
+  },
+  {
+    "id": "run_1765301231188_313",
+    "characterId": "char_17",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:27:11.188Z"
+  },
+  {
+    "id": "run_1765301332975_580",
+    "characterId": "char_17",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:28:52.975Z"
+  },
+  {
+    "id": "run_1765301448480_323",
+    "characterId": "char_21",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:30:48.480Z"
+  },
+  {
+    "id": "run_1765301556495_923",
+    "characterId": "char_21",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:32:36.495Z"
+  },
+  {
+    "id": "run_1765301663287_389",
+    "characterId": "char_21",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:34:23.287Z"
+  },
+  {
+    "id": "run_1765301695400_112",
+    "characterId": "char_3",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:34:55.400Z"
+  },
+  {
+    "id": "run_1765301696165_596",
+    "characterId": "char_3",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:34:56.165Z"
+  },
+  {
+    "id": "run_1765301696885_579",
+    "characterId": "char_3",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:34:56.885Z"
+  },
+  {
+    "id": "run_1765301701695_888",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:01.695Z"
+  },
+  {
+    "id": "run_1765301702366_571",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:02.366Z"
+  },
+  {
+    "id": "run_1765301702978_722",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:02.978Z"
+  },
+  {
+    "id": "run_1765301711321_504",
+    "characterId": "char_19",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:11.321Z"
+  },
+  {
+    "id": "run_1765301711867_161",
+    "characterId": "char_19",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:11.867Z"
+  },
+  {
+    "id": "run_1765301712484_155",
+    "characterId": "char_19",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:12.484Z"
+  },
+  {
+    "id": "run_1765301716270_615",
+    "characterId": "char_16",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:16.270Z"
+  },
+  {
+    "id": "run_1765301716919_530",
+    "characterId": "char_16",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:16.919Z"
+  },
+  {
+    "id": "run_1765301717543_558",
+    "characterId": "char_16",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:17.543Z"
+  },
+  {
+    "id": "run_1765301723828_174",
+    "characterId": "char_22",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:23.828Z"
+  },
+  {
+    "id": "run_1765301724400_987",
+    "characterId": "char_22",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:24.400Z"
+  },
+  {
+    "id": "run_1765301725046_773",
+    "characterId": "char_22",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:25.046Z"
+  },
+  {
+    "id": "run_1765301729725_983",
+    "characterId": "char_23",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:29.725Z"
+  },
+  {
+    "id": "run_1765301730451_843",
+    "characterId": "char_23",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:30.451Z"
+  },
+  {
+    "id": "run_1765301731096_18",
+    "characterId": "char_23",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:31.096Z"
+  },
+  {
+    "id": "run_1765301741874_477",
+    "characterId": "char_20",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:41.874Z"
+  },
+  {
+    "id": "run_1765301742379_545",
+    "characterId": "char_20",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:42.379Z"
+  },
+  {
+    "id": "run_1765301742929_457",
+    "characterId": "char_20",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:42.929Z"
+  },
+  {
+    "id": "run_1765301751239_452",
+    "characterId": "char_12",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:51.239Z"
+  },
+  {
+    "id": "run_1765301752232_937",
+    "characterId": "char_12",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:35:52.232Z"
+  },
+  {
+    "id": "run_1765301753618_837",
+    "characterId": "char_12",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T17:35:53.618Z"
+  },
+  {
+    "id": "run_1765301763811_148",
+    "characterId": "char_2",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:03.811Z"
+  },
+  {
+    "id": "run_1765301764392_764",
+    "characterId": "char_2",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:04.392Z"
+  },
+  {
+    "id": "run_1765301764952_530",
+    "characterId": "char_2",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:04.952Z"
+  },
+  {
+    "id": "run_1765301772051_873",
+    "characterId": "char_18",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:12.051Z"
+  },
+  {
+    "id": "run_1765301772840_522",
+    "characterId": "char_18",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:12.840Z"
+  },
+  {
+    "id": "run_1765301774253_533",
+    "characterId": "char_18",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T17:36:14.253Z"
+  },
+  {
+    "id": "run_1765301780848_145",
+    "characterId": "char_7",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:20.848Z"
+  },
+  {
+    "id": "run_1765301781477_77",
+    "characterId": "char_7",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:21.477Z"
+  },
+  {
+    "id": "run_1765301782712_544",
+    "characterId": "char_7",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T17:36:22.712Z"
+  },
+  {
+    "id": "run_1765301788656_412",
+    "characterId": "char_9",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:28.656Z"
+  },
+  {
+    "id": "run_1765301789269_986",
+    "characterId": "char_9",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:29.269Z"
+  },
+  {
+    "id": "run_1765301790607_612",
+    "characterId": "char_9",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T17:36:30.607Z"
+  },
+  {
+    "id": "run_1765301795903_62",
+    "characterId": "char_4",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:35.903Z"
+  },
+  {
+    "id": "run_1765301796548_200",
+    "characterId": "char_4",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:36:36.548Z"
+  },
+  {
+    "id": "run_1765301797833_551",
+    "characterId": "char_4",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T17:36:37.833Z"
+  },
+  {
+    "id": "run_1765302046223_760",
+    "characterId": "char_13",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:40:46.223Z"
+  },
+  {
+    "id": "run_1765302046878_814",
+    "characterId": "char_13",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:40:46.878Z"
+  },
+  {
+    "id": "run_1765302047525_202",
+    "characterId": "char_13",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T17:40:47.525Z"
+  },
+  {
+    "id": "run_1765303953938_768",
+    "characterId": "char_4",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [
+      {
+        "itemId": "piercing_da_ordem",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T18:12:33.938Z"
+  },
+  {
+    "id": "run_1765304148831_356",
+    "characterId": "char_9",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:15:48.831Z"
+  },
+  {
+    "id": "run_1765304391582_862",
+    "characterId": "char_7",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:19:51.582Z"
+  },
+  {
+    "id": "run_1765304790469_594",
+    "characterId": "char_18",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:26:30.469Z"
+  },
+  {
+    "id": "run_1765305145867_667",
+    "characterId": "char_2",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:32:25.867Z"
+  },
+  {
+    "id": "run_1765305314314_782",
+    "characterId": "char_12",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:35:14.314Z"
+  },
+  {
+    "id": "run_1765305490740_338",
+    "characterId": "char_20",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:38:10.740Z"
+  },
+  {
+    "id": "run_1765305675733_441",
+    "characterId": "char_23",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:41:15.733Z"
+  },
+  {
+    "id": "run_1765305859046_235",
+    "characterId": "char_22",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:44:19.046Z"
+  },
+  {
+    "id": "run_1765306082588_530",
+    "characterId": "char_16",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:48:02.588Z"
+  },
+  {
+    "id": "run_1765306270542_250",
+    "characterId": "char_19",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:51:10.542Z"
+  },
+  {
+    "id": "run_1765306436518_668",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:53:56.518Z"
+  },
+  {
+    "id": "run_1765306622032_748",
+    "characterId": "char_3",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:57:02.032Z"
+  },
+  {
+    "id": "run_1765306777623_305",
+    "characterId": "char_13",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T18:59:37.623Z"
+  },
+  {
+    "id": "run_1765306955372_449",
+    "characterId": "char_24",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:02:35.373Z"
+  },
+  {
+    "id": "run_1765307133123_861",
+    "characterId": "char_15",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:05:33.123Z"
+  },
+  {
+    "id": "run_1765307420730_117",
+    "characterId": "char_11",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [
+      {
+        "itemId": "piercing_dimensionais",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T19:10:20.730Z"
+  },
+  {
+    "id": "run_1765307623454_353",
+    "characterId": "char_5",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:13:43.454Z"
+  },
+  {
+    "id": "run_1765307804667_489",
+    "characterId": "char_8",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:16:44.667Z"
+  },
+  {
+    "id": "run_1765308033839_705",
+    "characterId": "char_6",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:20:33.839Z"
+  },
+  {
+    "id": "run_1765308224316_137",
+    "characterId": "char_10",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:23:44.316Z"
+  },
+  {
+    "id": "run_1765308492505_783",
+    "characterId": "char_14",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:28:12.505Z"
+  },
+  {
+    "id": "run_1765308686377_258",
+    "characterId": "char_17",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:31:26.377Z"
+  },
+  {
+    "id": "run_1765308825403_439",
+    "characterId": "char_21",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-09T19:33:45.403Z"
+  },
+  {
+    "id": "run_1765312431265_756",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T20:33:51.265Z"
+  },
+  {
+    "id": "run_1765312617362_266",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T20:36:57.362Z"
+  },
+  {
+    "id": "run_1765312797704_592",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T20:39:57.704Z"
+  },
+  {
+    "id": "run_1765313028736_369",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "carta_trevas_encarnadas",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T20:43:48.736Z"
+  },
+  {
+    "id": "run_1765313236963_252",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T20:47:16.963Z"
+  },
+  {
+    "id": "run_1765313412693_624",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T20:50:12.693Z"
+  },
+  {
+    "id": "run_1765313591478_967",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T20:53:11.478Z"
+  },
+  {
+    "id": "run_1765313792736_782",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T20:56:32.736Z"
+  },
+  {
+    "id": "run_1765314010925_777",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T21:00:10.925Z"
+  },
+  {
+    "id": "run_1765315219110_433",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T21:20:19.110Z"
+  },
+  {
+    "id": "run_1765315575039_626",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "tornozeleira_eternidade",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T21:26:15.039Z"
+  },
+  {
+    "id": "run_1765315774849_482",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T21:29:34.849Z"
+  },
+  {
+    "id": "run_1765315990136_997",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T21:33:10.136Z"
+  },
+  {
+    "id": "run_1765316187280_874",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T21:36:27.280Z"
+  },
+  {
+    "id": "run_1765322420778_940",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:20:20.778Z"
+  },
+  {
+    "id": "run_1765322675454_704",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:24:35.454Z"
+  },
+  {
+    "id": "run_1765322949862_468",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:29:09.862Z"
+  },
+  {
+    "id": "run_1765323164238_67",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:32:44.238Z"
+  },
+  {
+    "id": "run_1765323544943_538",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:39:04.943Z"
+  },
+  {
+    "id": "run_1765323732558_864",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:42:12.558Z"
+  },
+  {
+    "id": "run_1765323935536_369",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "titulo_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:45:35.536Z"
+  },
+  {
+    "id": "run_1765324146277_304",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:49:06.277Z"
+  },
+  {
+    "id": "run_1765324341079_341",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:52:21.079Z"
+  },
+  {
+    "id": "run_1765324528554_552",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:55:28.554Z"
+  },
+  {
+    "id": "run_1765324743863_673",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-09T23:59:03.863Z"
+  },
+  {
+    "id": "run_1765324935819_251",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:02:15.819Z"
+  },
+  {
+    "id": "run_1765325115782_306",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:05:15.782Z"
+  },
+  {
+    "id": "run_1765325324064_583",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:08:44.064Z"
+  },
+  {
+    "id": "run_1765325512253_736",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:11:52.253Z"
+  },
+  {
+    "id": "run_1765325695458_221",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:14:55.458Z"
+  },
+  {
+    "id": "run_1765326342302_95",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:25:42.302Z"
+  },
+  {
+    "id": "run_1765326553339_90",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "carta_trevas_desconhecidas",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:29:13.339Z"
+  },
+  {
+    "id": "run_1765326753982_586",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:32:33.982Z"
+  },
+  {
+    "id": "run_1765326958783_520",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:35:58.783Z"
+  },
+  {
+    "id": "run_1765327166154_446",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "tornozeleira_eternidade",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:39:26.154Z"
+  },
+  {
+    "id": "run_1765327386142_490",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:43:06.142Z"
+  },
+  {
+    "id": "run_1765327643663_402",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:47:23.663Z"
+  },
+  {
+    "id": "run_1765327844051_955",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:50:44.051Z"
+  },
+  {
+    "id": "run_1765328086849_616",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:54:46.849Z"
+  },
+  {
+    "id": "run_1765328262399_527",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T00:57:42.399Z"
+  },
+  {
+    "id": "run_1765328435787_966",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:00:35.787Z"
+  },
+  {
+    "id": "run_1765328630897_223",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:03:50.897Z"
+  },
+  {
+    "id": "run_1765328817511_57",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:06:57.511Z"
+  },
+  {
+    "id": "run_1765329031580_752",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:10:31.580Z"
+  },
+  {
+    "id": "run_1765329236182_111",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:13:56.183Z"
+  },
+  {
+    "id": "run_1765329427981_296",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:17:07.981Z"
+  },
+  {
+    "id": "run_1765330775101_407",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:39:35.101Z"
+  },
+  {
+    "id": "run_1765331259866_512",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:47:39.866Z"
+  },
+  {
+    "id": "run_1765331461596_306",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:51:01.596Z"
+  },
+  {
+    "id": "run_1765331639035_99",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:53:59.035Z"
+  },
+  {
+    "id": "run_1765331834239_807",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T01:57:14.239Z"
+  },
+  {
+    "id": "run_1765332000955_998",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T02:00:00.955Z"
+  },
+  {
+    "id": "run_1765332183380_442",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T02:03:03.380Z"
+  },
+  {
+    "id": "run_1765332369646_170",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T02:06:09.646Z"
+  },
+  {
+    "id": "run_1765332582580_854",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T02:09:42.580Z"
+  },
+  {
+    "id": "run_1765332750441_197",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T02:12:30.441Z"
+  },
+  {
+    "id": "run_1765332949540_517",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T02:15:49.540Z"
+  },
+  {
+    "id": "run_1765333161895_140",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T02:19:21.895Z"
+  },
+  {
+    "id": "run_1765333345575_698",
+    "characterId": "char_21",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T02:22:25.575Z"
+  },
+  {
+    "id": "run_1765390750406_391",
+    "characterId": "char_1",
+    "mapId": "void_contaminacao",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:19:10.406Z"
+  },
+  {
+    "id": "run_1765390984785_529",
+    "characterId": "char_1",
+    "mapId": "void_contaminacao",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:23:04.785Z"
+  },
+  {
+    "id": "run_1765391325779_37",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:28:45.779Z"
+  },
+  {
+    "id": "run_1765391528920_974",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:32:08.920Z"
+  },
+  {
+    "id": "run_1765391753687_758",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:35:53.687Z"
+  },
+  {
+    "id": "run_1765391933877_591",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:38:53.877Z"
+  },
+  {
+    "id": "run_1765392110784_584",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:41:50.784Z"
+  },
+  {
+    "id": "run_1765392285004_551",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:44:45.004Z"
+  },
+  {
+    "id": "run_1765392630211_603",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:50:30.211Z"
+  },
+  {
+    "id": "run_1765392806821_229",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:53:26.821Z"
+  },
+  {
+    "id": "run_1765392998505_704",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:56:38.505Z"
+  },
+  {
+    "id": "run_1765393171942_402",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T18:59:31.942Z"
+  },
+  {
+    "id": "run_1765393366180_872",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:02:46.180Z"
+  },
+  {
+    "id": "run_1765393565695_584",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:06:05.695Z"
+  },
+  {
+    "id": "run_1765393739270_871",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:08:59.270Z"
+  },
+  {
+    "id": "run_1765393948823_964",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:12:28.823Z"
+  },
+  {
+    "id": "run_1765394129698_394",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:15:29.698Z"
+  },
+  {
+    "id": "run_1765394310795_503",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:18:30.795Z"
+  },
+  {
+    "id": "run_1765394546772_784",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:22:26.772Z"
+  },
+  {
+    "id": "run_1765394733323_282",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:25:33.323Z"
+  },
+  {
+    "id": "run_1765394931788_601",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [
+      {
+        "itemId": "brincos_da_ordem",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T19:28:51.788Z"
+  },
+  {
+    "id": "run_1765395933422_556",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:45:33.422Z"
+  },
+  {
+    "id": "run_1765396110459_662",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:48:30.459Z"
+  },
+  {
+    "id": "run_1765396288956_623",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:51:28.956Z"
+  },
+  {
+    "id": "run_1765396468266_793",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:54:28.266Z"
+  },
+  {
+    "id": "run_1765396636042_123",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-10T19:57:16.042Z"
+  },
+  {
+    "id": "run_1765398922001_880",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T20:35:22.001Z"
+  },
+  {
+    "id": "run_1765399128641_341",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T20:38:48.641Z"
+  },
+  {
+    "id": "run_1765399328976_68",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T20:42:08.976Z"
+  },
+  {
+    "id": "run_1765399562531_704",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T20:46:02.531Z"
+  },
+  {
+    "id": "run_1765399987398_913",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T20:53:07.398Z"
+  },
+  {
+    "id": "run_1765400464293_686",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T21:01:04.293Z"
+  },
+  {
+    "id": "run_1765400466523_989",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T21:01:06.523Z"
+  },
+  {
+    "id": "run_1765400717132_841",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T21:05:17.132Z"
+  },
+  {
+    "id": "run_1765400943316_450",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T21:09:03.316Z"
+  },
+  {
+    "id": "run_1765401214635_813",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T21:13:34.635Z"
+  },
+  {
+    "id": "run_1765401454279_583",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T21:17:34.279Z"
+  },
+  {
+    "id": "run_1765406572807_577",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T22:42:52.807Z"
+  },
+  {
+    "id": "run_1765406942197_66",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T22:49:02.197Z"
+  },
+  {
+    "id": "run_1765407126116_821",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T22:52:06.116Z"
+  },
+  {
+    "id": "run_1765407348376_304",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T22:55:48.376Z"
+  },
+  {
+    "id": "run_1765407608703_620",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:00:08.703Z"
+  },
+  {
+    "id": "run_1765407928684_521",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:05:28.684Z"
+  },
+  {
+    "id": "run_1765408105019_551",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:08:25.019Z"
+  },
+  {
+    "id": "run_1765408279390_545",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:11:19.390Z"
+  },
+  {
+    "id": "run_1765408446744_471",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:14:06.744Z"
+  },
+  {
+    "id": "run_1765408642988_151",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:17:22.988Z"
+  },
+  {
+    "id": "run_1765408863583_438",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:21:03.583Z"
+  },
+  {
+    "id": "run_1765409073678_141",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:24:33.678Z"
+  },
+  {
+    "id": "run_1765409270474_493",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:27:50.474Z"
+  },
+  {
+    "id": "run_1765409453201_179",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:30:53.201Z"
+  },
+  {
+    "id": "run_1765409636690_596",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:33:56.690Z"
+  },
+  {
+    "id": "run_1765409810322_322",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "tornozeleira_eternidade",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:36:50.322Z"
+  },
+  {
+    "id": "run_1765410063189_566",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:41:03.189Z"
+  },
+  {
+    "id": "run_1765410273382_5",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:44:33.382Z"
+  },
+  {
+    "id": "run_1765410461885_825",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-10T23:47:41.885Z"
+  },
+  {
+    "id": "run_1765413288251_968",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T00:34:48.251Z"
+  },
+  {
+    "id": "run_1765413505906_16",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T00:38:25.906Z"
+  },
+  {
+    "id": "run_1765413748851_873",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T00:42:28.851Z"
+  },
+  {
+    "id": "run_1765414029845_583",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T00:47:09.845Z"
+  },
+  {
+    "id": "run_1765414236208_196",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T00:50:36.208Z"
+  },
+  {
+    "id": "run_1765415146176_278",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:05:46.176Z"
+  },
+  {
+    "id": "run_1765415362109_485",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:09:22.109Z"
+  },
+  {
+    "id": "run_1765415550026_315",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:12:30.026Z"
+  },
+  {
+    "id": "run_1765415786083_681",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_brilhante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:16:26.083Z"
+  },
+  {
+    "id": "run_1765415947369_61",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:19:07.369Z"
+  },
+  {
+    "id": "run_1765416120294_227",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:22:00.294Z"
+  },
+  {
+    "id": "run_1765416327216_762",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:25:27.216Z"
+  },
+  {
+    "id": "run_1765416486816_178",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:28:06.816Z"
+  },
+  {
+    "id": "run_1765416650030_964",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:30:50.030Z"
+  },
+  {
+    "id": "run_1765416863671_730",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:34:23.671Z"
+  },
+  {
+    "id": "run_1765417025905_695",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:37:05.905Z"
+  },
+  {
+    "id": "run_1765417199309_161",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "caixa_tesouro_solene_radiante",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "carta_trevas_imensas",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:39:59.309Z"
+  },
+  {
+    "id": "run_1765417411007_810",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:43:31.007Z"
+  },
+  {
+    "id": "run_1765417577298_435",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:46:17.298Z"
+  },
+  {
+    "id": "run_1765417770089_723",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "carta_memoria_preciosa",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:49:30.089Z"
+  },
+  {
+    "id": "run_1765417960909_819",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:52:40.909Z"
+  },
+  {
+    "id": "run_1765418142963_226",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      },
+      {
+        "itemId": "estilhaco_escuridao",
+        "qty": 1
+      },
+      {
+        "itemId": "carta_trevas_imensas",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:55:42.963Z"
+  },
+  {
+    "id": "run_1765418335847_331",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T01:58:55.847Z"
+  },
+  {
+    "id": "run_1765419051323_514",
+    "characterId": "char_1",
+    "mapId": "void_contaminacao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T02:10:51.323Z"
+  },
+  {
+    "id": "run_1765419479341_640",
+    "characterId": "char_1",
+    "mapId": "void_contaminacao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T02:17:59.341Z"
+  },
+  {
+    "id": "run_1765420377691_541",
+    "characterId": "char_1",
+    "mapId": "void_contaminacao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T02:32:57.691Z"
+  },
+  {
+    "id": "run_1765420718538_484",
+    "characterId": "char_1",
+    "mapId": "void_contaminacao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T02:38:38.538Z"
+  },
+  {
+    "id": "run_1765421085637_956",
+    "characterId": "char_1",
+    "mapId": "void_contaminacao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_alteracao",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T02:44:45.637Z"
+  },
+  {
+    "id": "run_1765421381865_695",
+    "characterId": "char_1",
+    "mapId": "void_contaminacao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T02:49:41.865Z"
+  },
+  {
+    "id": "run_1765455458220_438",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:17:38.220Z"
+  },
+  {
+    "id": "run_1765455649039_53",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:20:49.039Z"
+  },
+  {
+    "id": "run_1765455900349_515",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:25:00.349Z"
+  },
+  {
+    "id": "run_1765456101232_223",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:28:21.232Z"
+  },
+  {
+    "id": "run_1765456296639_722",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:31:36.639Z"
+  },
+  {
+    "id": "run_1765456525873_181",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:35:25.873Z"
+  },
+  {
+    "id": "run_1765456813604_371",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:40:13.604Z"
+  },
+  {
+    "id": "run_1765457005080_230",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:43:25.080Z"
+  },
+  {
+    "id": "run_1765457193198_453",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:46:33.198Z"
+  },
+  {
+    "id": "run_1765457396031_917",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:49:56.031Z"
+  },
+  {
+    "id": "run_1765457582988_720",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:53:02.988Z"
+  },
+  {
+    "id": "run_1765457768927_621",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:56:08.927Z"
+  },
+  {
+    "id": "run_1765457955543_245",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T12:59:15.543Z"
+  },
+  {
+    "id": "run_1765458159798_155",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:02:39.798Z"
+  },
+  {
+    "id": "run_1765458371962_17",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:06:11.963Z"
+  },
+  {
+    "id": "run_1765458547201_166",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:09:07.201Z"
+  },
+  {
+    "id": "run_1765458748173_629",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:12:28.173Z"
+  },
+  {
+    "id": "run_1765458942770_387",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [
+      {
+        "itemId": "piercing_da_ordem",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T13:15:42.770Z"
+  },
+  {
+    "id": "run_1765459120373_370",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:18:40.373Z"
+  },
+  {
+    "id": "run_1765459325431_604",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:22:05.431Z"
+  },
+  {
+    "id": "run_1765459515204_413",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:25:15.204Z"
+  },
+  {
+    "id": "run_1765459984544_535",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:33:04.544Z"
+  },
+  {
+    "id": "run_1765460103419_925",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T13:35:03.419Z"
+  },
+  {
+    "id": "run_1765471672727_263",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T16:47:52.727Z"
+  },
+  {
+    "id": "run_1765471797092_520",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T16:49:57.092Z"
+  },
+  {
+    "id": "run_1765471886428_441",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T16:51:26.428Z"
+  },
+  {
+    "id": "run_1765471997797_647",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T16:53:17.797Z"
+  },
+  {
+    "id": "run_1765472086228_531",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T16:54:46.228Z"
+  },
+  {
+    "id": "run_1765472193327_998",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T16:56:33.327Z"
+  },
+  {
+    "id": "run_1765472305020_579",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T16:58:25.020Z"
+  },
+  {
+    "id": "run_1765472402649_337",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:00:02.649Z"
+  },
+  {
+    "id": "run_1765472507157_86",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:01:47.157Z"
+  },
+  {
+    "id": "run_1765472672017_211",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:04:32.017Z"
+  },
+  {
+    "id": "run_1765472802824_108",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:06:42.824Z"
+  },
+  {
+    "id": "run_1765472899721_886",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:08:19.721Z"
+  },
+  {
+    "id": "run_1765473106828_724",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:11:46.828Z"
+  },
+  {
+    "id": "run_1765473213880_220",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:13:33.880Z"
+  },
+  {
+    "id": "run_1765473306907_33",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:15:06.907Z"
+  },
+  {
+    "id": "run_1765473407982_699",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T17:16:47.982Z"
+  },
+  {
+    "id": "run_1765473575953_619",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:19:35.953Z"
+  },
+  {
+    "id": "run_1765473676120_308",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:21:16.120Z"
+  },
+  {
+    "id": "run_1765473784451_569",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:23:04.451Z"
+  },
+  {
+    "id": "run_1765473899351_269",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:24:59.351Z"
+  },
+  {
+    "id": "run_1765474008103_906",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:26:48.103Z"
+  },
+  {
+    "id": "run_1765474108467_2",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:28:28.467Z"
+  },
+  {
+    "id": "run_1765474210456_460",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:30:10.456Z"
+  },
+  {
+    "id": "run_1765474333917_549",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:32:13.917Z"
+  },
+  {
+    "id": "run_1765474448646_778",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:34:08.646Z"
+  },
+  {
+    "id": "run_1765474556690_70",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T17:35:56.690Z"
+  },
+  {
+    "id": "run_1765474697648_68",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:38:17.648Z"
+  },
+  {
+    "id": "run_1765474818306_161",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:40:18.306Z"
+  },
+  {
+    "id": "run_1765474930014_482",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:42:10.014Z"
+  },
+  {
+    "id": "run_1765475044420_47",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:44:04.420Z"
+  },
+  {
+    "id": "run_1765475149074_212",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:45:49.074Z"
+  },
+  {
+    "id": "run_1765475382951_22",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:49:42.951Z"
+  },
+  {
+    "id": "run_1765475477660_129",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T17:51:17.660Z"
+  },
+  {
+    "id": "run_1765476008101_596",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:00:08.101Z"
+  },
+  {
+    "id": "run_1765476219908_517",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:03:39.908Z"
+  },
+  {
+    "id": "run_1765476359865_454",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:05:59.866Z"
+  },
+  {
+    "id": "run_1765476465312_313",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:07:45.312Z"
+  },
+  {
+    "id": "run_1765476591330_538",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:09:51.330Z"
+  },
+  {
+    "id": "run_1765476706221_307",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:11:46.221Z"
+  },
+  {
+    "id": "run_1765476816768_19",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:13:36.768Z"
+  },
+  {
+    "id": "run_1765476940677_812",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T18:15:40.677Z"
+  },
+  {
+    "id": "run_1765477159881_538",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:19:19.881Z"
+  },
+  {
+    "id": "run_1765477278913_230",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:21:18.913Z"
+  },
+  {
+    "id": "run_1765477387088_306",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:23:07.088Z"
+  },
+  {
+    "id": "run_1765477484791_477",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:24:44.791Z"
+  },
+  {
+    "id": "run_1765477727659_628",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T18:28:47.659Z"
+  },
+  {
+    "id": "run_1765477835801_703",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:30:35.801Z"
+  },
+  {
+    "id": "run_1765477974595_997",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-11T18:32:54.595Z"
+  },
+  {
+    "id": "run_1765478117475_322",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:35:17.476Z"
+  },
+  {
+    "id": "run_1765478224712_582",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:37:04.712Z"
+  },
+  {
+    "id": "run_1765478507689_621",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:41:47.689Z"
+  },
+  {
+    "id": "run_1765478601250_607",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:43:21.250Z"
+  },
+  {
+    "id": "run_1765478739978_526",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:45:39.978Z"
+  },
+  {
+    "id": "run_1765478938125_342",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:48:58.125Z"
+  },
+  {
+    "id": "run_1765479081047_574",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:51:21.047Z"
+  },
+  {
+    "id": "run_1765479193009_654",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:53:13.009Z"
+  },
+  {
+    "id": "run_1765479558023_980",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T18:59:18.023Z"
+  },
+  {
+    "id": "run_1765479639078_320",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:00:39.078Z"
+  },
+  {
+    "id": "run_1765479817155_169",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:03:37.155Z"
+  },
+  {
+    "id": "run_1765479847144_478",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:07.144Z"
+  },
+  {
+    "id": "run_1765479847741_403",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:07.741Z"
+  },
+  {
+    "id": "run_1765479848267_885",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:08.267Z"
+  },
+  {
+    "id": "run_1765479848790_516",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:08.790Z"
+  },
+  {
+    "id": "run_1765479849214_952",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:09.214Z"
+  },
+  {
+    "id": "run_1765479849692_551",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:09.692Z"
+  },
+  {
+    "id": "run_1765479850151_986",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:10.151Z"
+  },
+  {
+    "id": "run_1765479850556_358",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:10.556Z"
+  },
+  {
+    "id": "run_1765479850995_251",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:10.995Z"
+  },
+  {
+    "id": "run_1765479851424_271",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:11.424Z"
+  },
+  {
+    "id": "run_1765479851826_321",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:11.826Z"
+  },
+  {
+    "id": "run_1765479852259_568",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:12.259Z"
+  },
+  {
+    "id": "run_1765479852676_252",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-11T19:04:12.676Z"
+  },
+  {
+    "id": "run_1766159647434_282",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:07.434Z"
+  },
+  {
+    "id": "run_1766159647694_552",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:07.694Z"
+  },
+  {
+    "id": "run_1766159648490_734",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:08.490Z"
+  },
+  {
+    "id": "run_1766159649093_253",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:09.093Z"
+  },
+  {
+    "id": "run_1766159649697_881",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:09.697Z"
+  },
+  {
+    "id": "run_1766159650690_91",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:10.690Z"
+  },
+  {
+    "id": "run_1766159651255_772",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:11.255Z"
+  },
+  {
+    "id": "run_1766159651799_274",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:11.799Z"
+  },
+  {
+    "id": "run_1766159652300_539",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:12.300Z"
+  },
+  {
+    "id": "run_1766159682375_505",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:54:42.375Z"
+  },
+  {
+    "id": "run_1766159772764_253",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:56:12.764Z"
+  },
+  {
+    "id": "run_1766159863480_421",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:57:43.480Z"
+  },
+  {
+    "id": "run_1766159969309_978",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T15:59:29.309Z"
+  },
+  {
+    "id": "run_1766160082279_160",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:01:22.279Z"
+  },
+  {
+    "id": "run_1766160162564_512",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:02:42.564Z"
+  },
+  {
+    "id": "run_1766160285607_64",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:04:45.607Z"
+  },
+  {
+    "id": "run_1766160358705_795",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:05:58.705Z"
+  },
+  {
+    "id": "run_1766160462018_497",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:07:42.018Z"
+  },
+  {
+    "id": "run_1766160563683_374",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:09:23.683Z"
+  },
+  {
+    "id": "run_1766160670934_528",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:11:10.934Z"
+  },
+  {
+    "id": "run_1766160778723_727",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:12:58.723Z"
+  },
+  {
+    "id": "run_1766160880273_138",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:14:40.273Z"
+  },
+  {
+    "id": "run_1766161066791_665",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:17:46.791Z"
+  },
+  {
+    "id": "run_1766161210607_188",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:20:10.607Z"
+  },
+  {
+    "id": "run_1766161419695_966",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:23:39.695Z"
+  },
+  {
+    "id": "run_1766161554691_914",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:25:54.691Z"
+  },
+  {
+    "id": "run_1766161657751_78",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:27:37.751Z"
+  },
+  {
+    "id": "run_1766161930511_211",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:32:10.511Z"
+  },
+  {
+    "id": "run_1766161931254_523",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:32:11.254Z"
+  },
+  {
+    "id": "run_1766161959215_641",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:32:39.215Z"
+  },
+  {
+    "id": "run_1766162066456_81",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:34:26.456Z"
+  },
+  {
+    "id": "run_1766162192504_715",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:36:32.504Z"
+  },
+  {
+    "id": "run_1766162288558_460",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-19T16:38:08.558Z"
+  },
+  {
+    "id": "run_1766162398015_606",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:39:58.015Z"
+  },
+  {
+    "id": "run_1766162517650_354",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:41:57.650Z"
+  },
+  {
+    "id": "run_1766162630588_341",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:43:50.588Z"
+  },
+  {
+    "id": "run_1766162732643_112",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:45:32.643Z"
+  },
+  {
+    "id": "run_1766162847670_454",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:47:27.670Z"
+  },
+  {
+    "id": "run_1766162963467_262",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:49:23.467Z"
+  },
+  {
+    "id": "run_1766163158531_376",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-19T16:52:38.531Z"
+  },
+  {
+    "id": "run_1766163276302_540",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:54:36.302Z"
+  },
+  {
+    "id": "run_1766163380457_967",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:56:20.457Z"
+  },
+  {
+    "id": "run_1766163501411_304",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T16:58:21.411Z"
+  },
+  {
+    "id": "run_1766163656988_274",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:00:56.988Z"
+  },
+  {
+    "id": "run_1766163778147_251",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:02:58.147Z"
+  },
+  {
+    "id": "run_1766163895803_681",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:04:55.803Z"
+  },
+  {
+    "id": "run_1766164017953_597",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:06:57.953Z"
+  },
+  {
+    "id": "run_1766164129789_909",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:08:49.789Z"
+  },
+  {
+    "id": "run_1766164225917_321",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:10:25.917Z"
+  },
+  {
+    "id": "run_1766164316544_52",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:11:56.544Z"
+  },
+  {
+    "id": "run_1766164476402_257",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:14:36.402Z"
+  },
+  {
+    "id": "run_1766164581178_511",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:16:21.178Z"
+  },
+  {
+    "id": "run_1766164698536_568",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:18:18.536Z"
+  },
+  {
+    "id": "run_1766164801602_767",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:20:01.602Z"
+  },
+  {
+    "id": "run_1766164897314_498",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:21:37.314Z"
+  },
+  {
+    "id": "run_1766165023684_8",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:23:43.684Z"
+  },
+  {
+    "id": "run_1766165129546_246",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:25:29.546Z"
+  },
+  {
+    "id": "run_1766165330251_36",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:28:50.251Z"
+  },
+  {
+    "id": "run_1766165450062_1",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:30:50.062Z"
+  },
+  {
+    "id": "run_1766165559007_157",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:32:39.007Z"
+  },
+  {
+    "id": "run_1766165671214_645",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:34:31.214Z"
+  },
+  {
+    "id": "run_1766165793414_868",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:36:33.414Z"
+  },
+  {
+    "id": "run_1766165901019_850",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:38:21.019Z"
+  },
+  {
+    "id": "run_1766166006742_542",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:40:06.742Z"
+  },
+  {
+    "id": "run_1766166199769_148",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:43:19.769Z"
+  },
+  {
+    "id": "run_1766166347830_20",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:45:47.830Z"
+  },
+  {
+    "id": "run_1766166870313_758",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:54:30.313Z"
+  },
+  {
+    "id": "run_1766166870958_247",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T17:54:30.958Z"
+  },
+  {
+    "id": "run_1766167035274_126",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-19T17:57:15.274Z"
+  },
+  {
+    "id": "run_1766167383900_732",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T18:03:03.900Z"
+  },
+  {
+    "id": "run_1766167582884_868",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T18:06:22.884Z"
+  },
+  {
+    "id": "run_1766167777823_303",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T18:09:37.823Z"
+  },
+  {
+    "id": "run_1766167949464_559",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T18:12:29.464Z"
+  },
+  {
+    "id": "run_1766168273494_55",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T18:17:53.495Z"
+  },
+  {
+    "id": "run_1766168543056_628",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T18:22:23.056Z"
+  },
+  {
+    "id": "run_1766172234038_2",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:23:54.038Z"
+  },
+  {
+    "id": "run_1766172408277_485",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:26:48.277Z"
+  },
+  {
+    "id": "run_1766172565440_193",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:29:25.440Z"
+  },
+  {
+    "id": "run_1766172726650_133",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:32:06.650Z"
+  },
+  {
+    "id": "run_1766172898360_322",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [
+      {
+        "itemId": "brincos_do_caos",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-19T19:34:58.360Z"
+  },
+  {
+    "id": "run_1766173092305_82",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:38:12.305Z"
+  },
+  {
+    "id": "run_1766173251584_225",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:40:51.584Z"
+  },
+  {
+    "id": "run_1766173423408_961",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:43:43.408Z"
+  },
+  {
+    "id": "run_1766173588635_9",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:46:28.635Z"
+  },
+  {
+    "id": "run_1766173762051_627",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:49:22.051Z"
+  },
+  {
+    "id": "run_1766173908465_551",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:51:48.465Z"
+  },
+  {
+    "id": "run_1766174068162_56",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:54:28.162Z"
+  },
+  {
+    "id": "run_1766174250583_660",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T19:57:30.583Z"
+  },
+  {
+    "id": "run_1766174436196_617",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T20:00:36.196Z"
+  },
+  {
+    "id": "run_1766174605575_221",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T20:03:25.575Z"
+  },
+  {
+    "id": "run_1766174827141_888",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T20:07:07.141Z"
+  },
+  {
+    "id": "run_1766175162593_377",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T20:12:42.593Z"
+  },
+  {
+    "id": "run_1766175163019_551",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2025-12-19T20:12:43.019Z"
+  },
+  {
+    "id": "run_1766176141777_101",
+    "characterId": "char_1",
+    "mapId": "capela_da_eternidade",
+    "itemsFound": [
+      {
+        "itemId": "carta_trevas_imensas",
+        "qty": 1
+      },
+      {
+        "itemId": "trevas_alteradas_criacao",
+        "qty": 1
+      },
+      {
+        "itemId": "fragmento_adrite",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2025-12-19T20:29:01.777Z"
+  }
+]
