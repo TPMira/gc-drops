@@ -9,8 +9,8 @@ import { readJson } from "@/lib/jsondb";
 
 export const dynamic = "force-dynamic";
 
-export default function RankPage() {
-  const ranks = (readJson("attackRanks.json") ?? []) as AttackRankEntry[];
+export default async function RankPage() {
+  const ranks = ((await readJson("attackRanks.json")) ?? []) as AttackRankEntry[];
   const entries = ranks
     .map((e) => {
       const { score, breakdown } = computeAttackRankScore(e.stats);

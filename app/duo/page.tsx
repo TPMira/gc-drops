@@ -1,18 +1,10 @@
-import fs from "fs";
-import path from "path";
 import DuoBoard, { type DuoQueue } from "./DuoBoard";
+import { readJson } from "@/lib/jsondb";
 
 export const dynamic = "force-dynamic";
 
-function readJSON(file: string) {
-  const p = path.join(process.cwd(), "data", file);
-  if (!fs.existsSync(p)) return null;
-  const raw = fs.readFileSync(p, "utf8");
-  return JSON.parse(raw);
-}
-
-export default function DuoPage() {
-  const initialQueues = (readJSON("duoQueues.json") ?? []) as DuoQueue[];
+export default async function DuoPage() {
+  const initialQueues = ((await readJson("duoQueues.json")) ?? []) as DuoQueue[];
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#070b16] text-zinc-100">

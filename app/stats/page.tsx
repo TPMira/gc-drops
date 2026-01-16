@@ -1,12 +1,10 @@
-'use client';
-import { useEffect, useState } from 'react';
-import maps from "@/data/maps.json";
-import runs from "@/data/runs.json";
+import { readJson } from "@/lib/jsondb";
 
+export const dynamic = "force-dynamic";
 
-export default function StatsPage() {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+export default async function StatsPage() {
+  const maps = (await readJson<any[]>("maps.json")) ?? [];
+  const runs = (await readJson<any[]>("runs.json")) ?? [];
 
   // classes por raridade (tema escuro)
   const rarityColor: Record<string, string> = {
@@ -19,16 +17,6 @@ export default function StatsPage() {
   };
   const badgeClass = (r?: string) =>
     `text-2xs px-2 py-0.5 rounded ${r && rarityColor[r] ? rarityColor[r] : "bg-zinc-700 text-zinc-100"}`;
-
-  if (!mounted) {
-    return (
-      <div className="max-w-5xl mx-auto p-6">
-        <h1 className="text-3xl font-bold mb-2">Estatísticas de Drop</h1>
-        <p className="text-sm text-gray-400 mb-6">Carregando...</p>
-        <div className="rounded-lg border border-white/10 bg-white/3 h-40 animate-pulse" />
-      </div>
-    );
-  }
 
   return (
     <div className="max-w-5xl mx-auto p-6">

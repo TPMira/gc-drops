@@ -16,6 +16,23 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Persistência (Vercel)
+
+Em ambiente local este projeto lê/escreve em arquivos dentro de `data/*.json`.
+
+Quando você faz deploy na Vercel, o filesystem do runtime é **read-only** (por isso o erro `EROFS: read-only file system`). Para permitir salvar runs/ranks em produção, o projeto usa **Vercel KV**.
+
+### Como configurar
+
+1. No painel da Vercel: **Storage → KV → Create** (ou Connect).
+2. A Vercel vai criar automaticamente as env vars do KV (ex.: `KV_REST_API_URL` e `KV_REST_API_TOKEN`).
+3. Faça um novo deploy.
+
+### Como funciona
+
+- Em produção, `readJson/writeJson` gravam no KV com chave `jsondb:<arquivo>`.
+- Na primeira leitura, se não existir nada no KV ainda, ele faz *seed* a partir do JSON local do repositório (ex.: `data/maps.json`).
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

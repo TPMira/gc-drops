@@ -13,9 +13,9 @@ export async function POST(req: Request) {
     }
 
     // load DB files
-    const characters = readJson("characters.json") ?? [];
-    const maps = readJson("maps.json") ?? [];
-    const runs = readJson("runs.json") ?? [];
+  const characters = (await readJson("characters.json")) ?? [];
+  const maps = (await readJson("maps.json")) ?? [];
+  const runs = (await readJson("runs.json")) ?? [];
 
     // ensure map exists
     const map = maps.find((m: any) => m.id === mapId);
@@ -36,7 +36,7 @@ export async function POST(req: Request) {
       const newId = "char_" + Date.now() + "_" + Math.floor(Math.random() * 1000);
       char = { id: newId, name: characterName };
       characters.push(char);
-      writeJson("characters.json", characters);
+      await writeJson("characters.json", characters);
     }
 
     // Validate itemsFound: ensure each itemId exists in map
@@ -60,7 +60,7 @@ export async function POST(req: Request) {
     };
 
     runs.push(run);
-    writeJson("runs.json", runs);
+    await writeJson("runs.json", runs);
 
     return NextResponse.json({ ok: true, run });
   } catch (err) {

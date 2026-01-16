@@ -38,7 +38,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "attack must be > 0" }, { status: 400 });
     }
 
-    const existing = (readJson("attackRanks.json") ?? []) as AttackRankEntry[];
+    const existing = ((await readJson("attackRanks.json")) ?? []) as AttackRankEntry[];
 
     const entry: AttackRankEntry = {
       id: "atk_" + Date.now() + "_" + Math.floor(Math.random() * 1000),
@@ -49,7 +49,7 @@ export async function POST(req: Request) {
     };
 
     existing.push(entry);
-    writeJson("attackRanks.json", existing);
+    await writeJson("attackRanks.json", existing);
 
     return NextResponse.json({ ok: true, entry });
   } catch (err) {
