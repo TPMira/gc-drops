@@ -6,6 +6,7 @@ import {
   type AttackRankEntry,
 } from "@/lib/attackRank";
 import { readJson } from "@/lib/jsondb";
+import AttackRankRowActions from "@/app/components/AttackRankRowActions";
 
 export const dynamic = "force-dynamic";
 
@@ -50,7 +51,7 @@ export default async function RankPage() {
       />
 
       {/* Camada 3: Conteúdo */}
-      <div className="relative z-10 max-w-5xl mx-auto p-6">
+      <div className="relative z-10 max-w-5xl mx-auto p-6 scale-150">
         <div className="mb-6 rounded-lg border border-white/10 bg-black/25 backdrop-blur">
           <div className="px-4 py-3 flex items-center justify-between">
             <div>
@@ -63,7 +64,7 @@ export default async function RankPage() {
           </div>
         </div>
 
-        <div className="rounded-lg border border-white/10 bg-black/20 backdrop-blur p-4 mb-6">
+        {/* <div className="rounded-lg border border-white/10 bg-black/20 backdrop-blur p-4 mb-6">
           <div className="text-sm text-gray-200">
             <div className="font-semibold mb-1">Fórmula (resumo)</div>
             <div className="text-gray-300">
@@ -73,7 +74,7 @@ export default async function RankPage() {
               Obs: Chance Crítica é capada em {DEFAULT_ATTACK_RANK_WEIGHTS.critChanceCapPct}%.
             </div>
           </div>
-        </div>
+        </div> */}
 
         <AttackRankCreate />
 
@@ -95,6 +96,7 @@ export default async function RankPage() {
                   <th className="border border-white/10 p-2 text-right"> ✨ Atk Esp</th>
                   <th className="border border-white/10 p-2 text-right"> 🗡️ Costas%</th>
                   <th className="border border-white/10 p-2 text-right"> 🏆 Score</th>
+                  <th className="border border-white/10 p-2 text-center">Ações</th>
                 </tr>
               </thead>
               <tbody>
@@ -128,6 +130,9 @@ export default async function RankPage() {
                     </td>
                     <td className="border border-white/10 p-2 text-right font-semibold text-amber-200">
                       {Math.round(e.score).toLocaleString()}
+                    </td>
+                    <td className="border border-white/10 p-2 text-center">
+                      <AttackRankRowActions entry={e as any} />
                     </td>
                   </tr>
                 ))}
