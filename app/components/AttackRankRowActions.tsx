@@ -31,7 +31,13 @@ function toForm(entry: AttackRankEntry): FormState {
   };
 }
 
-export default function AttackRankRowActions({ entry }: { entry: AttackRankEntry }) {
+export default function AttackRankRowActions({
+  entry,
+  basePath = "/api/attack-rank",
+}: {
+  entry: AttackRankEntry;
+  basePath?: string;
+}) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -76,7 +82,7 @@ export default function AttackRankRowActions({ entry }: { entry: AttackRankEntry
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(`/api/attack-rank/${encodeURIComponent(entry.id)}`, {
+      const res = await fetch(`${basePath}/${encodeURIComponent(entry.id)}`, {
         method: "DELETE",
       });
       const data = await res.json().catch(() => ({}));
@@ -108,7 +114,7 @@ export default function AttackRankRowActions({ entry }: { entry: AttackRankEntry
 
     setLoading(true);
     try {
-      const res = await fetch(`/api/attack-rank/${encodeURIComponent(entry.id)}`, {
+      const res = await fetch(`${basePath}/${encodeURIComponent(entry.id)}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

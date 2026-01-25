@@ -20,6 +20,20 @@ function toNumberString(v: string) {
 }
 
 export default function AttackRankCreate() {
+  return <AttackRankCreateWithEndpoint />;
+}
+
+export function AttackRankCreateWithEndpoint({
+  endpoint = "/api/attack-rank",
+  title = "Cadastrar novo attack",
+  subtitle = "Adiciona uma nova entrada no rank.",
+  buttonLabel = "Cadastrar",
+}: {
+  endpoint?: string;
+  title?: string;
+  subtitle?: string;
+  buttonLabel?: string;
+}) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -82,7 +96,7 @@ export default function AttackRankCreate() {
 
     setLoading(true);
     try {
-      const res = await fetch("/api/attack-rank", {
+      const res = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -119,15 +133,15 @@ export default function AttackRankCreate() {
     <div className="rounded-lg border border-white/10 bg-white/3 p-4 mb-6">
       <div className="flex items-center justify-between gap-3">
         <div>
-          <div className="font-semibold">Cadastrar novo attack</div>
-          <div className="text-sm text-gray-400">Adiciona uma nova entrada no rank.</div>
+          <div className="font-semibold">{title}</div>
+          <div className="text-sm text-gray-400">{subtitle}</div>
         </div>
         <button
           type="button"
           className="px-3 py-2 rounded bg-black/40 border border-white/10 text-sm hover:bg-black/60"
           onClick={() => setOpen((v) => !v)}
         >
-          {open ? "Fechar" : "Cadastrar"}
+          {open ? "Fechar" : buttonLabel}
         </button>
       </div>
 
@@ -148,7 +162,7 @@ export default function AttackRankCreate() {
           >
             <div className="px-4 py-3 flex items-start justify-between gap-3 border-b border-white/10">
               <div>
-                <div className="font-semibold">Cadastrar novo attack</div>
+                <div className="font-semibold">{title}</div>
                 <div className="text-sm text-gray-400">Camada 4 (modal) por cima da página.</div>
               </div>
               <button

@@ -1,20 +1,33 @@
-import AttackRankCreate from "@/app/components/AttackRankCreate";
-import CharacterIcon from "@/app/components/CharacterIcon";
 import {
   computeAttackRankScore,
   DEFAULT_ATTACK_RANK_WEIGHTS,
   type AttackRankEntry,
 } from "@/lib/attackRank";
 import { readJson } from "@/lib/jsondb";
-import AttackRankRowActions from "@/app/components/AttackRankRowActions";
+import RankBoards, { type AttackRankComputedEntry } from "./RankBoards";
 
 export const dynamic = "force-dynamic";
 
 export default async function RankPage() {
-  const ranks = ((await readJson("attackRanks.json")) ?? []) as AttackRankEntry[];
-  const entries = ranks
+  const ranks120 = ((await readJson("attackRanks.json")) ?? []) as AttackRankEntry[];
+  const ranks100 = ((await readJson("attackRanks100.json")) ?? []) as AttackRankEntry[];
+
+  const entries120: AttackRankComputedEntry[] = ranks120
     .map((e) => {
-      const { score, breakdown } = computeAttackRankScore(e.stats);
+      const { score, breakdown } = computeAttackRankScore(e.stats, {
+        ...DEFAULT_ATTACK_RANK_WEIGHTS,
+        critChanceCapPct: 120,
+      });
+      return { ...e, score, breakdown };
+    })
+    .sort((a, b) => b.score - a.score);
+
+  const entries100: AttackRankComputedEntry[] = ranks100
+    .map((e) => {
+      const { score, breakdown } = computeAttackRankScore(e.stats, {
+        ...DEFAULT_ATTACK_RANK_WEIGHTS,
+        critChanceCapPct: 100,
+      });
       return { ...e, score, breakdown };
     })
     .sort((a, b) => b.score - a.score);
@@ -64,82 +77,7 @@ export default async function RankPage() {
           </div>
         </div>
 
-        {/* <div className="rounded-lg border border-white/10 bg-black/20 backdrop-blur p-4 mb-6">
-          <div className="text-sm text-gray-200">
-            <div className="font-semibold mb-1">Fórmula (resumo)</div>
-            <div className="text-gray-300">
-              Score = (Atk + AtkEsp × {DEFAULT_ATTACK_RANK_WEIGHTS.specialAttackToAttack}) × (1 + Costas%) × (1 + ChanceCrit(c/100) × DanoCrit%)
-            </div>
-            <div className="text-gray-400 mt-2">
-              Obs: Chance Crítica é capada em {DEFAULT_ATTACK_RANK_WEIGHTS.critChanceCapPct}%.
-            </div>
-          </div>
-        </div> */}
-
-        <AttackRankCreate />
-
-        {entries.length === 0 ? (
-          <div className="rounded-lg border border-white/10 bg-black/20 backdrop-blur p-4 text-gray-300 text-sm italic">
-            Nenhuma entrada cadastrada ainda.
-          </div>
-        ) : (
-          <div className="overflow-x-auto rounded-lg border border-white/10 bg-black/20 backdrop-blur">
-            <table className="w-full border-collapse text-sm sm:text-[15px] lg:text-base xl:text-lg leading-6">
-              <thead className="sticky top-0 z-10">
-                <tr className="bg-black/60 backdrop-blur text-zinc-100">
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">#</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-left">Name</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">Char</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> ⚔️ Atk</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> 🎯 Crit%</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> 💥 Dano Crit%</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> ✨ Atk Esp</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> 🗡️ Costas%</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right"> 🏆 Score</th>
-                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">Ações</th>
-                </tr>
-              </thead>
-              <tbody>
-                {entries.map((e, idx) => (
-                  <tr
-                    key={e.id}
-                    className={idx % 2 === 0 ? "bg-white/5" : "bg-transparent"}
-                  >
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">{idx + 1}</td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-left">
-                      <div className="font-semibold text-zinc-100">{e.name}</div>
-                      {/* {e.updatedAt ? (
-                        <div className="text-xs text-gray-400">
-                          {new Date(e.updatedAt).toLocaleString()}
-                        </div>
-                      ) : null} */}
-                    </td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center text-gray-200">
-                      <CharacterIcon character={e.character} size={38} />
-                    </td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">{e.stats.attack}</td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">
-                      {e.stats.critChancePct.toFixed(2)}%
-                    </td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">
-                      {e.stats.critDamagePct.toFixed(2)}%
-                    </td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">{e.stats.specialAttack}</td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">
-                      {e.stats.backAttackDamagePct.toFixed(2)}%
-                    </td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right font-bold text-amber-200 tabular-nums">
-                      {Math.round(e.score).toLocaleString()}
-                    </td>
-                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">
-                      <AttackRankRowActions entry={e as any} />
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
+        <RankBoards entries120={entries120} entries100={entries100} />
       </div>
     </div>
   );
