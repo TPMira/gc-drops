@@ -4058,5 +4058,439 @@
       }
     ],
     "createdAt": "2025-12-19T20:29:01.777Z"
+  },
+  {
+    "id": "run_1770298064600_532",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-05T13:27:44.600Z"
+  },
+  {
+    "id": "run_1770333517687_618",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [
+      {
+        "itemId": "carta_do_astaroth",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-05T23:18:37.687Z"
+  },
+  {
+    "id": "run_1770396480060_627",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      },
+      {
+        "itemId": "perf_10f",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-06T16:48:00.060Z"
+  },
+  {
+    "id": "run_1770396491465_152",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T16:48:11.465Z"
+  },
+  {
+    "id": "run_1770396491896_41",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T16:48:11.896Z"
+  },
+  {
+    "id": "run_1770396634241_827",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T16:50:34.241Z"
+  },
+  {
+    "id": "run_1770396854082_755",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T16:54:14.082Z"
+  },
+  {
+    "id": "run_1770397025186_356",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T16:57:05.186Z"
+  },
+  {
+    "id": "run_1770397209310_141",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:00:09.310Z"
+  },
+  {
+    "id": "run_1770397398445_894",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:03:18.445Z"
+  },
+  {
+    "id": "run_1770397573901_70",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:06:13.901Z"
+  },
+  {
+    "id": "run_1770397745570_370",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:09:05.570Z"
+  },
+  {
+    "id": "run_1770397967186_790",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:12:47.186Z"
+  },
+  {
+    "id": "run_1770398109154_282",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:15:09.154Z"
+  },
+  {
+    "id": "run_1770398450173_331",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:20:50.173Z"
+  },
+  {
+    "id": "run_1770398863601_888",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:27:43.601Z"
+  },
+  {
+    "id": "run_1770399040190_668",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "perf_10f",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-06T17:30:40.190Z"
+  },
+  {
+    "id": "run_1770399214732_34",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:33:34.732Z"
+  },
+  {
+    "id": "run_1770399423311_998",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:37:03.311Z"
+  },
+  {
+    "id": "run_1770399621654_881",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:40:21.654Z"
+  },
+  {
+    "id": "run_1770399830258_815",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:43:50.258Z"
+  },
+  {
+    "id": "run_1770400018033_815",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:46:58.033Z"
+  },
+  {
+    "id": "run_1770400184839_879",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:49:44.839Z"
+  },
+  {
+    "id": "run_1770400368480_525",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:52:48.480Z"
+  },
+  {
+    "id": "run_1770400545595_458",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "perf_10f",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-06T17:55:45.595Z"
+  },
+  {
+    "id": "run_1770400751360_126",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T17:59:11.360Z"
+  },
+  {
+    "id": "run_1770400953028_590",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T18:02:33.028Z"
+  },
+  {
+    "id": "run_1770401133073_913",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T18:05:33.073Z"
+  },
+  {
+    "id": "run_1770401389331_556",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-06T18:09:49.331Z"
+  },
+  {
+    "id": "run_1770401780250_17",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [
+      {
+        "itemId": "pergaminho_de_propriedade_unica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-06T18:16:20.250Z"
+  },
+  {
+    "id": "run_1770402040210_243",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T18:20:40.210Z"
+  },
+  {
+    "id": "run_1770402043058_960",
+    "characterId": "char_1",
+    "mapId": "torre_da_extincao",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T18:20:43.058Z"
+  },
+  {
+    "id": "run_1770408429814_200",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:07:09.814Z"
+  },
+  {
+    "id": "run_1770408549219_551",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:09:09.219Z"
+  },
+  {
+    "id": "run_1770408688204_903",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:11:28.204Z"
+  },
+  {
+    "id": "run_1770408817274_991",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:13:37.274Z"
+  },
+  {
+    "id": "run_1770408949608_740",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:15:49.608Z"
+  },
+  {
+    "id": "run_1770409086437_375",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:18:06.437Z"
+  },
+  {
+    "id": "run_1770409212929_947",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:20:12.929Z"
+  },
+  {
+    "id": "run_1770409353384_285",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:22:33.384Z"
+  },
+  {
+    "id": "run_1770409491150_863",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:24:51.150Z"
+  },
+  {
+    "id": "run_1770409645748_540",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:27:25.748Z"
+  },
+  {
+    "id": "run_1770409832276_984",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:30:32.276Z"
+  },
+  {
+    "id": "run_1770409982693_876",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:33:02.693Z"
+  },
+  {
+    "id": "run_1770410134652_774",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:35:34.652Z"
+  },
+  {
+    "id": "run_1770410254665_181",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:37:34.665Z"
+  },
+  {
+    "id": "run_1770410393658_267",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:39:53.658Z"
+  },
+  {
+    "id": "run_1770410523239_988",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:42:03.239Z"
+  },
+  {
+    "id": "run_1770410646086_843",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:44:06.086Z"
+  },
+  {
+    "id": "run_1770410788557_761",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:46:28.557Z"
+  },
+  {
+    "id": "run_1770410909901_267",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:48:29.901Z"
+  },
+  {
+    "id": "run_1770411054122_982",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:50:54.122Z"
+  },
+  {
+    "id": "run_1770411258889_709",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [
+      {
+        "itemId": "piercing_dimensionais",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-06T20:54:18.889Z"
+  },
+  {
+    "id": "run_1770411400076_805",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [],
+    "createdAt": "2026-02-06T20:56:40.076Z"
+  },
+  {
+    "id": "run_1770411511748_561",
+    "characterId": "char_1",
+    "mapId": "explosao_de_calnat",
+    "itemsFound": [
+      {
+        "itemId": "brincos_da_ordem",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-02-06T20:58:31.748Z"
   }
 ]

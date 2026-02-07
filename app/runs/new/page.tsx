@@ -6,7 +6,7 @@ export default async function NewRunPage() {
   const characters = (await readJson("characters.json")) ?? [];
 
   return (
-    <div className="max-w-3xl mx-auto h-screen p-6">
+    <div className=" mx-auto h-screen">
       {/* Passa os dados para o client component via props */}
       {/* @ts-ignore Server -> Client prop serialização */}
       <RunForm maps={maps} characters={characters} />

@@ -3,54 +3,182 @@
     "id": "torre_da_extincao",
     "name": "Torre da Extinção",
     "items": [
-      { "id": "pergaminho_de_propriedade_unica", "name": "Pergaminho de Propriedade Única", "rarity": "Epic" }
+      {
+        "id": "pergaminho_de_propriedade_unica",
+        "name": "Perga 5F",
+        "rarity": "Epic",
+        "imageUrl": "https://media.discordapp.net/attachments/1382413152238440612/1468969937153556510/pergaminho_de_propriedade_unica.png?ex=698745dd&is=6985f45d&hm=568c7d1043d1604fb6f55ae2a67453a60b09c28f83746738a288e43278ffb4a4&=&format=webp&quality=lossless"
+      },
+      {
+        "id": "perf_10f",
+        "name": "Perga 10F",
+        "rarity": "Epic",
+        "imageUrl": "https://media.discordapp.net/attachments/1382413152238440612/1468969937153556510/pergaminho_de_propriedade_unica.png?ex=698745dd&is=6985f45d&hm=568c7d1043d1604fb6f55ae2a67453a60b09c28f83746738a288e43278ffb4a4&=&format=webp&quality=lossless"
+      }
     ]
   },
   {
     "id": "explosao_de_calnat",
     "name": "Explosão de Calnat",
     "items": [
-      { "id": "brincos_da_ordem", "name": "Brincos da Ordem", "rarity": "Legendary" },
-      { "id": "piercing_da_ordem", "name": "Piercing da Ordem", "rarity": "Legendary" },
-      { "id": "piercing_dimensionais", "name": "Piercing Dimensionais", "rarity": "Legendary" },
-      { "id": "brincos_dimensionais", "name": "Brincos Dimensionais", "rarity": "Legendary" },
-      { "id": "brincos_do_caos", "name": "Brincos do Caos", "rarity": "Legendary" },
-      { "id": "piercing_do_caos", "name": "Piercing do Caos", "rarity": "Legendary" },
-      { "id": "carta_da_bruxa", "name": "Carta da Bruxa", "rarity": "Legendary" },
-      { "id": "carta_do_astaroth", "name": "Carta do Astaroth", "rarity": "Epic" }
+      {
+        "id": "brincos_da_ordem",
+        "name": "Brincos da Ordem",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "piercing_da_ordem",
+        "name": "Piercing da Ordem",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "piercing_dimensionais",
+        "name": "Piercing Dimensionais",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "brincos_dimensionais",
+        "name": "Brincos Dimensionais",
+        "rarity": "Legendary",
+        "imageUrl": "https://media.discordapp.net/attachments/1382413152238440612/1469423020543180850/image.png?ex=69879a54&is=698648d4&hm=e9a44d7d2ac8b121ed30ad1363401f16baaaab5789ab5b4e7e163feba4885140&=&format=webp&quality=lossless"
+      },
+      {
+        "id": "brincos_do_caos",
+        "name": "Brincos do Caos",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "piercing_do_caos",
+        "name": "Piercing do Caos",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "carta_da_bruxa",
+        "name": "Carta da Bruxa",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "carta_do_astaroth",
+        "name": "Carta do Astaroth",
+        "rarity": "Epic"
+      }
     ]
   },
   {
     "id": "capela_da_eternidade",
     "name": "Capela da Eternidade",
     "items": [
-      { "id": "carta_memoria_preciosa", "name": "Carta Memória Preciosa", "rarity": "Legendary" },
-      { "id": "carta_trevas_encarnadas", "name": "Carta Trevas Encarnadas", "rarity": "Legendary" },
-      { "id": "caixa_tesouro_solene_radiante", "name": "Caixa Tesouro Solene Radiante", "rarity": "Legendary" },
-      { "id": "caixa_tesouro_solene_brilhante", "name": "Caixa Tesouro Solene Brilhante", "rarity": "Epic" },
-      { "id": "fragmento_adrite", "name": "Fragmento Adrite", "rarity": "Rare" },
-      { "id": "estilhaco_escuridao", "name": "Estilhaço da Escuridão", "rarity": "Rare" },
-      { "id": "tornozeleira_eternidade", "name": "Tornozeleira da Eternidade", "rarity": "Rare" },
-      { "id": "carta_trevas_imensas", "name": "Carta Trevas Imensas", "rarity": "Rare" },
-      { "id": "carta_trevas_desconhecidas", "name": "Carta Trevas Desconhecidas", "rarity": "Rare" },
-      { "id": "trevas_alteradas_criacao", "name": "Trevas Alteradas Criação", "rarity": "Common" },
-      { "id": "trevas_alteradas_destruicao", "name": "Trevas Alteradas Destruição", "rarity": "Common" },
-      { "id": "trevas_evoluidas", "name": "Trevas Evoluídas", "rarity": "Common" },
-      { "id": "trevas_invenciveis", "name": "Trevas Invencíveis", "rarity": "Common" },
-      { "id": "trevas_obsecadas", "name": "Trevas Obsecadas", "rarity": "Common" },
-      { "id": "trevas", "name": "Trevas", "rarity": "Common" }
+      {
+        "id": "carta_memoria_preciosa",
+        "name": "Carta Memória Preciosa",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "carta_trevas_encarnadas",
+        "name": "Carta Trevas Encarnadas",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "caixa_tesouro_solene_radiante",
+        "name": "Caixa Tesouro Solene Radiante",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "caixa_tesouro_solene_brilhante",
+        "name": "Caixa Tesouro Solene Brilhante",
+        "rarity": "Epic"
+      },
+      {
+        "id": "fragmento_adrite",
+        "name": "Fragmento Adrite",
+        "rarity": "Rare"
+      },
+      {
+        "id": "estilhaco_escuridao",
+        "name": "Estilhaço da Escuridão",
+        "rarity": "Rare"
+      },
+      {
+        "id": "tornozeleira_eternidade",
+        "name": "Tornozeleira da Eternidade",
+        "rarity": "Rare"
+      },
+      {
+        "id": "carta_trevas_imensas",
+        "name": "Carta Trevas Imensas",
+        "rarity": "Rare"
+      },
+      {
+        "id": "carta_trevas_desconhecidas",
+        "name": "Carta Trevas Desconhecidas",
+        "rarity": "Rare"
+      },
+      {
+        "id": "trevas_alteradas_criacao",
+        "name": "Trevas Alteradas Criação",
+        "rarity": "Common"
+      },
+      {
+        "id": "trevas_alteradas_destruicao",
+        "name": "Trevas Alteradas Destruição",
+        "rarity": "Common"
+      },
+      {
+        "id": "trevas_evoluidas",
+        "name": "Trevas Evoluídas",
+        "rarity": "Common"
+      },
+      {
+        "id": "trevas_invenciveis",
+        "name": "Trevas Invencíveis",
+        "rarity": "Common"
+      },
+      {
+        "id": "trevas_obsecadas",
+        "name": "Trevas Obsecadas",
+        "rarity": "Common"
+      },
+      {
+        "id": "trevas",
+        "name": "Trevas",
+        "rarity": "Common"
+      }
     ]
   },
   {
     "id": "void_contaminacao",
     "name": "Void Contaminação",
     "items": [
-      { "id": "caixa_calca", "name": "Caixa Calça", "rarity": "Ancestral" },
-      { "id": "caixa_cota", "name": "Caixa Cota", "rarity": "Ancestral" },
-      { "id": "caixa_elmo", "name": "Caixa Elmo", "rarity": "Ancestral" },
-      { "id": "pergaminho_de_alteracao", "name": "Pergaminho de Alteração", "rarity": "Ancestral" },
-      { "id": "carta_observador_do_vazio", "name": "Carta Observador do Vazio", "rarity": "Legendary" },
-      { "id": "carta_executor_do_vazio", "name": "Carta Executor do Vazio", "rarity": "Epic" }
+      {
+        "id": "caixa_calca",
+        "name": "Caixa Calça",
+        "rarity": "Ancestral"
+      },
+      {
+        "id": "caixa_cota",
+        "name": "Caixa Cota",
+        "rarity": "Ancestral"
+      },
+      {
+        "id": "caixa_elmo",
+        "name": "Caixa Elmo",
+        "rarity": "Ancestral"
+      },
+      {
+        "id": "pergaminho_de_alteracao",
+        "name": "Pergaminho de Alteração",
+        "rarity": "Ancestral"
+      },
+      {
+        "id": "carta_observador_do_vazio",
+        "name": "Carta Observador do Vazio",
+        "rarity": "Legendary"
+      },
+      {
+        "id": "carta_executor_do_vazio",
+        "name": "Carta Executor do Vazio",
+        "rarity": "Epic"
+      }
     ]
   }
 ]

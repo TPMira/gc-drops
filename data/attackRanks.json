@@ -1,67 +1,116 @@
 [
   {
-    "id": "atk_1768096703455_818",
+    "id": "atk120_1770127052993_58",
+    "name": "Frotz",
+    "character": "Iris",
+    "stats": {
+      "attackTotal": 1080041,
+      "attackNormal": 39695,
+      "attackSpecial": 26671,
+      "critRate": 114.51,
+      "critDamage": 946.51,
+      "backAttack": 89.73,
+      "mpPct": 43
+    },
+    "updatedAt": "2026-02-05T16:22:29.232Z",
+    "discordUserId": "370291606819045377",
+    "discordUsername": "Frotz",
+    "discordAvatarUrl": "https://cdn.discordapp.com/avatars/370291606819045377/ccd5d35f3b4ceb9c1722bd9dc7b471fe.webp?size=256",
+    "characterImageUrl": "https://media.discordapp.net/attachments/713111674134986793/1469004534041940081/image.png?ex=69861495&is=6984c315&hm=9fb0d103953dd9a35e28420f4063c5ca673e3cddc2188c71a8781470ad2a4371&=&format=webp&quality=lossless"
+  },
+  {
+    "id": "atk_1770164309403_343",
     "name": "Mira",
     "character": "Kallia",
     "stats": {
-      "attack": 43617,
-      "critChancePct": 118.27,
-      "critDamagePct": 985.06,
-      "specialAttack": 27232,
-      "backAttackDamagePct": 83.23
+      "attackTotal": 1288984,
+      "attackNormal": 43938,
+      "attackSpecial": 27509,
+      "critRate": 119.68,
+      "critDamage": 991.03,
+      "backAttack": 86.87,
+      "mpPct": 46.2
     },
-    "updatedAt": "2026-01-11T01:58:23.455Z"
+    "updatedAt": "2026-02-05T16:18:26.172Z",
+    "discordUserId": "210024828747513857",
+    "discordUsername": "Mira",
+    "discordAvatarUrl": "https://cdn.discordapp.com/avatars/210024828747513857/583bb2cf7a9272cff95c8d84d3cf95d9.webp?size=256",
+    "characterImageUrl": "https://cdn.discordapp.com/attachments/1382413152238440612/1468401525033275402/image.png?ex=6983e2fd&is=6982917d&hm=fc74f49f888150e1e28a6b5d99602ca2310fbeb73072dbc7da8de427310499e1&"
   },
   {
-    "id": "atk_1768150580934_873",
-    "name": "Mira2",
-    "character": "Lupus",
+    "id": "atk_1770306748409_4",
+    "name": "marquin",
+    "character": "Veigas",
     "stats": {
-      "attack": 36299,
-      "critChancePct": 120.78,
-      "critDamagePct": 797.87,
-      "specialAttack": 23607,
-      "backAttackDamagePct": 76.74
+      "attackTotal": 761351,
+      "attackNormal": 32256,
+      "attackSpecial": 20775,
+      "critRate": 102.69,
+      "critDamage": 753.41,
+      "backAttack": 42.44,
+      "mpPct": 81.6
     },
-    "updatedAt": "2026-01-11T16:56:20.934Z"
+    "updatedAt": "2026-02-05T16:28:25.115Z",
+    "discordUserId": "259819177022455809",
+    "discordUsername": "marquin",
+    "discordAvatarUrl": "https://cdn.discordapp.com/avatars/259819177022455809/994e725e9f7d768e5ccb5e6ef05d3904.webp?size=256",
+    "characterImageUrl": "https://cdn.discordapp.com/attachments/713111674134986793/1469005645003882614/image.png?ex=6986159e&is=6984c41e&hm=7e4feab47122aedaa1aa309b4050eab2bcc72bb0e2d600ecfe1cc3a6fb4870fe&"
   },
   {
-    "id": "atk_1768150890093_965",
+    "id": "atk_1770308478266_595",
     "name": "Mira",
-    "character": "Holy",
+    "character": "Veigas",
     "stats": {
-      "attack": 35109,
-      "critChancePct": 97.58,
-      "critDamagePct": 833.22,
-      "specialAttack": 20037,
-      "backAttackDamagePct": 56.57
+      "attackTotal": 800473,
+      "attackNormal": 36360,
+      "attackSpecial": 20929,
+      "critRate": 94.93,
+      "critDamage": 777.27,
+      "backAttack": 78.02,
+      "mpPct": 83.84
     },
-    "updatedAt": "2026-01-11T17:01:30.093Z"
+    "updatedAt": "2026-02-05T16:21:18.266Z",
+    "discordUserId": "210024828747513857",
+    "discordUsername": "Mira",
+    "discordAvatarUrl": "https://cdn.discordapp.com/avatars/210024828747513857/583bb2cf7a9272cff95c8d84d3cf95d9.webp?size=256",
+    "characterImageUrl": "https://cdn.discordapp.com/attachments/1382413152238440612/1469004602094391440/image.png?ex=698614a5&is=6984c325&hm=87b15dcd81321de5f01594abb901280a36623b3b023642d597a3bbc94144e8ad&"
   },
   {
-    "id": "atk_1768397662566_453",
-    "name": "Kuma",
+    "id": "atk_1770309155778_583",
+    "name": "Mira",
     "character": "Lupus",
     "stats": {
-      "attack": 39703,
-      "critChancePct": 117.98,
-      "critDamagePct": 1016.45,
-      "specialAttack": 30112,
-      "backAttackDamagePct": 89.54
+      "attackTotal": 1183203,
+      "attackNormal": 36165,
+      "attackSpecial": 24694,
+      "critRate": 120.14,
+      "critDamage": 931.21,
+      "backAttack": 85.83,
+      "mpPct": 79.97
     },
-    "updatedAt": "2026-01-14T13:34:22.566Z"
+    "updatedAt": "2026-02-05T16:32:35.778Z",
+    "discordUserId": "210024828747513857",
+    "discordUsername": "Mira",
+    "discordAvatarUrl": "https://cdn.discordapp.com/avatars/210024828747513857/583bb2cf7a9272cff95c8d84d3cf95d9.webp?size=256",
+    "characterImageUrl": "https://media.discordapp.net/attachments/1382413152238440612/1469007497019789527/image.png?ex=69861758&is=6984c5d8&hm=e03ffbdde5e4c8ec076102cc5c1456bc0180a34a04aba02cce01d0d2e2e74241&=&format=webp&quality=lossless"
   },
   {
-    "id": "atk_1768397723181_347",
-    "name": "Samuel",
+    "id": "atk_1770309935517_546",
+    "name": "marquin",
     "character": "Lupus",
     "stats": {
-      "attack": 37171,
-      "critChancePct": 117.44,
-      "critDamagePct": 1011.81,
-      "specialAttack": 29000,
-      "backAttackDamagePct": 87.61
+      "attackTotal": 1527251,
+      "attackNormal": 39970,
+      "attackSpecial": 30640,
+      "critRate": 118.68,
+      "critDamage": 1018.45,
+      "backAttack": 89.54,
+      "mpPct": 94.09
     },
-    "updatedAt": "2026-01-14T13:35:23.181Z"
+    "updatedAt": "2026-02-05T16:45:35.517Z",
+    "discordUserId": "259819177022455809",
+    "discordUsername": "marquin",
+    "discordAvatarUrl": "https://cdn.discordapp.com/avatars/259819177022455809/994e725e9f7d768e5ccb5e6ef05d3904.webp?size=256",
+    "characterImageUrl": "https://cdn.discordapp.com/attachments/713111674134986793/1468997630163161211/image.png?ex=69860e27&is=6984bca7&hm=a2efc66e43ef3ee403e3cd19a23b2d1ceeb4fd62d3b2b9d0c73215dacc8e200c&"
   }
 ]
