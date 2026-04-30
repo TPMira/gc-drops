@@ -6,7 +6,7 @@ const ITEMS_DIR = path.join(process.cwd(), "public", "items");
 const MAX_SIZE = 5 * 1024 * 1024; // 5 MB
 
 // Allowed extensions mapped to their magic byte signatures
-const MAGIC: Record<string, { bytes: number[]; mask?: number[] }[]> = {
+const MAGIC: Record<string, { bytes: number[]; mask?: number[]; offset?: number }[]> = {
   ".png":  [{ bytes: [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a] }],
   ".jpg":  [{ bytes: [0xff, 0xd8, 0xff] }],
   ".jpeg": [{ bytes: [0xff, 0xd8, 0xff] }],
