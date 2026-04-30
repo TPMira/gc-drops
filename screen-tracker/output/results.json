@@ -1,35 +1,51 @@
 {
   "meta": {
-    "ts": 1777557304.7463546,
+    "ts": 1777572488.5179904,
     "monitor": 1,
     "map": null,
-    "map_score": 0.7580558657646179
+    "map_score": 0.6871481537818909
   },
-  "drops": [],
-  "drops_summary": {},
-  "unknown_count": 11,
+  "drops": [
+    {
+      "name": "moeda_epica",
+      "row": 0,
+      "col": 0,
+      "score": 0.9921845197677612
+    },
+    {
+      "name": "cristal",
+      "row": 0,
+      "col": 5,
+      "score": 0.91005539894104
+    }
+  ],
+  "drops_summary": {
+    "moeda_epica": 1,
+    "cristal": 1
+  },
+  "unknown_count": 5,
   "slots": [
     {
       "row": 0,
       "col": 0,
       "path": "output/slot_r0_c0.png",
       "empty": false,
-      "match": null,
-      "score": null,
-      "best_match": "pot_hp",
-      "best_score": 0.07706251740455627,
+      "match": "moeda_epica",
+      "score": 0.9921845197677612,
+      "best_match": "moeda_epica",
+      "best_score": 0.9921845197677612,
       "match_pad": 0
     },
     {
       "row": 0,
       "col": 1,
-      "path": null,
-      "empty": true,
+      "path": "output/slot_r0_c1.png",
+      "empty": false,
       "match": null,
       "score": null,
-      "best_match": null,
-      "best_score": null,
-      "match_pad": null
+      "best_match": "estilhaco_da_escuridao",
+      "best_score": 0.4925576448440552,
+      "match_pad": 0
     },
     {
       "row": 0,
@@ -38,8 +54,8 @@
       "empty": false,
       "match": null,
       "score": null,
-      "best_match": "caixa_roxa",
-      "best_score": 0.05296444892883301,
+      "best_match": "revive",
+      "best_score": 0.3757179379463196,
       "match_pad": 0
     },
     {
@@ -49,30 +65,30 @@
       "empty": false,
       "match": null,
       "score": null,
-      "best_match": "caixa_dourada",
-      "best_score": 0.09934717416763306,
+      "best_match": "chama_das_bestas",
+      "best_score": 0.3886722922325134,
       "match_pad": 0
     },
     {
       "row": 0,
       "col": 4,
-      "path": null,
-      "empty": true,
+      "path": "output/slot_r0_c4.png",
+      "empty": false,
       "match": null,
       "score": null,
-      "best_match": null,
-      "best_score": null,
-      "match_pad": null
+      "best_match": "pot_hp",
+      "best_score": 0.21136443316936493,
+      "match_pad": 0
     },
     {
       "row": 0,
       "col": 5,
       "path": "output/slot_r0_c5.png",
       "empty": false,
-      "match": null,
-      "score": null,
-      "best_match": "tornozeleira_direita",
-      "best_score": 0.04023260623216629,
+      "match": "cristal",
+      "score": 0.91005539894104,
+      "best_match": "cristal",
+      "best_score": 0.91005539894104,
       "match_pad": 0
     },
     {
@@ -82,8 +98,8 @@
       "empty": false,
       "match": null,
       "score": null,
-      "best_match": "caixa_roxa",
-      "best_score": 0.11597827821969986,
+      "best_match": "pot_mana",
+      "best_score": 0.25267189741134644,
       "match_pad": 0
     },
     {
@@ -100,24 +116,24 @@
     {
       "row": 1,
       "col": 2,
-      "path": "output/slot_r1_c2.png",
-      "empty": false,
+      "path": null,
+      "empty": true,
       "match": null,
       "score": null,
-      "best_match": "tornozeleira",
-      "best_score": 0.04148368909955025,
-      "match_pad": 0
+      "best_match": null,
+      "best_score": null,
+      "match_pad": null
     },
     {
       "row": 1,
       "col": 3,
-      "path": "output/slot_r1_c3.png",
-      "empty": false,
+      "path": null,
+      "empty": true,
       "match": null,
       "score": null,
-      "best_match": "espirito_guardiao_do_repouso",
-      "best_score": 0.04809673875570297,
-      "match_pad": 0
+      "best_match": null,
+      "best_score": null,
+      "match_pad": null
     },
     {
       "row": 1,
@@ -133,13 +149,13 @@
     {
       "row": 1,
       "col": 5,
-      "path": "output/slot_r1_c5.png",
-      "empty": false,
+      "path": null,
+      "empty": true,
       "match": null,
       "score": null,
-      "best_match": "trevas_obcecadas",
-      "best_score": 0.06619519740343094,
-      "match_pad": 0
+      "best_match": null,
+      "best_score": null,
+      "match_pad": null
     },
     {
       "row": 2,
@@ -166,24 +182,24 @@
     {
       "row": 2,
       "col": 2,
-      "path": "output/slot_r2_c2.png",
-      "empty": false,
+      "path": null,
+      "empty": true,
       "match": null,
       "score": null,
-      "best_match": "perga_runa",
-      "best_score": 0.03267122805118561,
-      "match_pad": 0
+      "best_match": null,
+      "best_score": null,
+      "match_pad": null
     },
     {
       "row": 2,
       "col": 3,
-      "path": "output/slot_r2_c3.png",
-      "empty": false,
+      "path": null,
+      "empty": true,
       "match": null,
       "score": null,
-      "best_match": "presa espinhosa_do_pantano",
-      "best_score": 0.04331669583916664,
-      "match_pad": 0
+      "best_match": null,
+      "best_score": null,
+      "match_pad": null
     },
     {
       "row": 2,
@@ -199,13 +215,13 @@
     {
       "row": 2,
       "col": 5,
-      "path": "output/slot_r2_c5.png",
-      "empty": false,
+      "path": null,
+      "empty": true,
       "match": null,
       "score": null,
-      "best_match": "espirito_liquido_do_repouso",
-      "best_score": 0.10078100115060806,
-      "match_pad": 0
+      "best_match": null,
+      "best_score": null,
+      "match_pad": null
     }
   ]
 }

@@ -9722,5 +9722,503 @@
     "mapId": null,
     "itemsFound": [],
     "createdAt": "2026-04-30T13:55:04.746Z"
+  },
+  {
+    "id": "run_1777565524528_370",
+    "mapId": "calnat",
+    "itemsFound": [],
+    "createdAt": "2026-04-30T16:12:04.528Z"
+  },
+  {
+    "id": "run_1777565545957_386",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:12:25.957Z"
+  },
+  {
+    "id": "run_1777565562592_661",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:12:42.592Z"
+  },
+  {
+    "id": "run_1777566259555_466",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:24:19.555Z"
+  },
+  {
+    "id": "run_1777566396455_260",
+    "mapId": "calnat",
+    "itemsFound": [],
+    "createdAt": "2026-04-30T16:26:36.455Z"
+  },
+  {
+    "id": "run_1777566523550_524",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:28:43.550Z"
+  },
+  {
+    "id": "run_1777566706869_848",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:31:46.869Z"
+  },
+  {
+    "id": "run_1777566832671_395",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:33:52.671Z"
+  },
+  {
+    "id": "run_1777566956819_453",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:35:56.819Z"
+  },
+  {
+    "id": "run_1777567091934_533",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:38:11.934Z"
+  },
+  {
+    "id": "run_1777567201608_946",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:40:01.608Z"
+  },
+  {
+    "id": "run_1777567335143_241",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:42:15.143Z"
+  },
+  {
+    "id": "run_1777567444651_847",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:44:04.651Z"
+  },
+  {
+    "id": "run_1777567581024_967",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:46:21.024Z"
+  },
+  {
+    "id": "run_1777567770589_843",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:49:30.589Z"
+  },
+  {
+    "id": "run_1777567902970_119",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:51:42.970Z"
+  },
+  {
+    "id": "run_1777568038035_459",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:53:58.035Z"
+  },
+  {
+    "id": "run_1777568243041_306",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T16:57:23.041Z"
+  },
+  {
+    "id": "run_1777568292467_236",
+    "mapId": "calnat",
+    "itemsFound": [],
+    "createdAt": "2026-04-30T16:58:12.467Z"
+  },
+  {
+    "id": "run_1777568402554_661",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:00:02.554Z"
+  },
+  {
+    "id": "run_1777568617416_914",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:03:37.416Z"
+  },
+  {
+    "id": "run_1777568727938_495",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:05:27.938Z"
+  },
+  {
+    "id": "run_1777568850531_759",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:07:30.531Z"
+  },
+  {
+    "id": "run_1777568973829_349",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:09:33.829Z"
+  },
+  {
+    "id": "run_1777569109493_853",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:11:49.493Z"
+  },
+  {
+    "id": "run_1777569227416_766",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:13:47.416Z"
+  },
+  {
+    "id": "run_1777569350956_444",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:15:50.956Z"
+  },
+  {
+    "id": "run_1777569415960_112",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:16:55.960Z"
+  },
+  {
+    "id": "run_1777570652908_738",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:37:32.908Z"
+  },
+  {
+    "id": "run_1777570775684_262",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "brinco_caos",
+        "qty": 1
+      },
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:39:35.684Z"
+  },
+  {
+    "id": "run_1777570970457_794",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:42:50.457Z"
+  },
+  {
+    "id": "run_1777571107655_236",
+    "mapId": "calnat",
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T17:45:07.655Z"
+  },
+  {
+    "id": "run_1777572329008_246",
+    "mapId": null,
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T18:05:29.008Z"
+  },
+  {
+    "id": "run_1777572346884_967",
+    "mapId": null,
+    "itemsFound": [
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T18:05:46.884Z"
+  },
+  {
+    "id": "run_1777572488517_339",
+    "mapId": null,
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T18:08:08.517Z"
   }
 ]

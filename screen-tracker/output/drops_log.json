@@ -13530,5 +13530,832 @@
     "drops": [],
     "drops_summary": {},
     "unknown_count": 11
+  },
+  {
+    "ts": 1777565524.5287483,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [],
+    "drops_summary": {},
+    "unknown_count": 11
+  },
+  {
+    "ts": 1777565545.957908,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
+  },
+  {
+    "ts": 1777565562.592103,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
+  },
+  {
+    "ts": 1777566259.5550706,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
+  },
+  {
+    "ts": 1777566396.4552686,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [],
+    "drops_summary": {},
+    "unknown_count": 11
+  },
+  {
+    "ts": 1777566523.5501761,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 4,
+        "score": 1.0
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
+  },
+  {
+    "ts": 1777566706.8691554,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 4,
+        "score": 1.0
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 10
+  },
+  {
+    "ts": 1777566832.6712968,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9637189507484436,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 0,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777566956.8197155,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 1,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777567091.934788,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 2,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 8
+  },
+  {
+    "ts": 1777567201.6086195,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 1,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777567335.1436312,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 1,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 8
+  },
+  {
+    "ts": 1777567444.6518574,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9605682492256165,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 0,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 6
+  },
+  {
+    "ts": 1777567581.0243573,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 6
+  },
+  {
+    "ts": 1777567770.58954,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 2,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 10
+  },
+  {
+    "ts": 1777567902.9701917,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 1,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777568038.0350976,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 1,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 8
+  },
+  {
+    "ts": 1777568243.0411034,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 1,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 8
+  },
+  {
+    "ts": 1777568292.467755,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [],
+    "drops_summary": {},
+    "unknown_count": 1
+  },
+  {
+    "ts": 1777568402.5545173,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
+  },
+  {
+    "ts": 1777568617.416353,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 0,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 8
+  },
+  {
+    "ts": 1777568727.9388719,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9636104106903076,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
+  },
+  {
+    "ts": 1777568850.531397,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777568973.8291445,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.872957170009613,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 8
+  },
+  {
+    "ts": 1777569109.4932613,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777569227.41621,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9605682492256165,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 2,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 9
+  },
+  {
+    "ts": 1777569350.9561267,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9854134321212769,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 2,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777569415.960338,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9854134321212769,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 2,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777570652.9082513,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 0,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 7
+  },
+  {
+    "ts": 1777570775.6848934,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "brinco_caos",
+        "row": 0,
+        "col": 2,
+        "score": 1.0
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 5,
+        "score": 0.9716305136680603
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "brinco_caos": 1,
+      "cristal": 1
+    },
+    "unknown_count": 11
+  },
+  {
+    "ts": 1777570970.4576294,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 1,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 8
+  },
+  {
+    "ts": 1777571107.6558847,
+    "monitor": 1,
+    "map": "calnat",
+    "map_score": 0.9999998807907104,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
+  },
+  {
+    "ts": 1777572329.0084164,
+    "monitor": 1,
+    "map": null,
+    "map_score": 0.6871481537818909,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
+  },
+  {
+    "ts": 1777572346.884875,
+    "monitor": 1,
+    "map": null,
+    "map_score": 0.6807884573936462,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1
+    },
+    "unknown_count": 10
+  },
+  {
+    "ts": 1777572488.5179904,
+    "monitor": 1,
+    "map": null,
+    "map_score": 0.6871481537818909,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 0,
+        "col": 5,
+        "score": 0.91005539894104
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 5
   }
 ]
