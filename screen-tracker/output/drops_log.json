@@ -14357,5 +14357,30 @@
       "cristal": 1
     },
     "unknown_count": 5
+  },
+  {
+    "ts": 1777580374.0707672,
+    "monitor": 1,
+    "map": null,
+    "map_score": 0.6871481537818909,
+    "drops": [
+      {
+        "name": "moeda_epica",
+        "row": 0,
+        "col": 0,
+        "score": 0.9921845197677612
+      },
+      {
+        "name": "cristal",
+        "row": 1,
+        "col": 1,
+        "score": 0.8550803065299988
+      }
+    ],
+    "drops_summary": {
+      "moeda_epica": 1,
+      "cristal": 1
+    },
+    "unknown_count": 8
   }
 ]

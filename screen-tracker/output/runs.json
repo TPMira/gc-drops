@@ -10220,5 +10220,20 @@
       }
     ],
     "createdAt": "2026-04-30T18:08:08.517Z"
+  },
+  {
+    "id": "run_1777580374070_127",
+    "mapId": null,
+    "itemsFound": [
+      {
+        "itemId": "cristal",
+        "qty": 1
+      },
+      {
+        "itemId": "moeda_epica",
+        "qty": 1
+      }
+    ],
+    "createdAt": "2026-04-30T20:19:34.070Z"
   }
 ]
