@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ts": 1777580374.0707672,
+    "ts": 1777582211.6420038,
     "monitor": 1,
     "map": null,
     "map_score": 0.6871481537818909
@@ -15,7 +15,7 @@
     {
       "name": "cristal",
       "row": 1,
-      "col": 1,
+      "col": 2,
       "score": 0.8550803065299988
     }
   ],
@@ -55,7 +55,7 @@
       "match": null,
       "score": null,
       "best_match": "revive",
-      "best_score": 0.44465428590774536,
+      "best_score": 0.4077832102775574,
       "match_pad": 0
     },
     {
@@ -66,7 +66,7 @@
       "match": null,
       "score": null,
       "best_match": "perga_aleatorio",
-      "best_score": 0.20411354303359985,
+      "best_score": 0.19815707206726074,
       "match_pad": 0
     },
     {
@@ -76,8 +76,8 @@
       "empty": false,
       "match": null,
       "score": null,
-      "best_match": "estilhaco_da_escuridao",
-      "best_score": 0.40200692415237427,
+      "best_match": "pot_hp",
+      "best_score": 0.19197063148021698,
       "match_pad": 0
     },
     {
@@ -88,7 +88,7 @@
       "match": null,
       "score": null,
       "best_match": "tornozeleira_direita",
-      "best_score": 0.2254648059606552,
+      "best_score": 0.2269565761089325,
       "match_pad": 0
     },
     {
@@ -99,13 +99,24 @@
       "match": null,
       "score": null,
       "best_match": "pot_hp",
-      "best_score": 0.41940632462501526,
+      "best_score": 0.2617699205875397,
       "match_pad": 0
     },
     {
       "row": 1,
       "col": 1,
       "path": "output/slot_r1_c1.png",
+      "empty": false,
+      "match": null,
+      "score": null,
+      "best_match": "fragmento_de_adrite",
+      "best_score": 0.44096657633781433,
+      "match_pad": 0
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "path": "output/slot_r1_c2.png",
       "empty": false,
       "match": "cristal",
       "score": 0.8550803065299988,
@@ -115,24 +126,13 @@
     },
     {
       "row": 1,
-      "col": 2,
-      "path": "output/slot_r1_c2.png",
-      "empty": false,
-      "match": null,
-      "score": null,
-      "best_match": "pot_mana",
-      "best_score": 0.24821680784225464,
-      "match_pad": 0
-    },
-    {
-      "row": 1,
       "col": 3,
       "path": "output/slot_r1_c3.png",
       "empty": false,
       "match": null,
       "score": null,
-      "best_match": "chama_das_bestas",
-      "best_score": 0.24459925293922424,
+      "best_match": "cristal",
+      "best_score": 0.2679044306278229,
       "match_pad": 0
     },
     {
