@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useToast } from '@/app/components/ToastProvider';
 
 type MapItem = { id: string; name: string; rarity?: string; imageUrl?: string };
-type MapType = { id: string; name: string; imageUrl?: string; items: MapItem[] };
+type MapType = { id: string; name: string; imageUrl?: string; items: MapItem[]; runsOffset?: number; dropOffsets?: Record<string, number> };
 type Character = { id: string; name: string };
 type ItemFound = { itemId: string; qty: number };
 type Run = { mapId: string; itemsFound?: ItemFound[] };
@@ -63,26 +63,41 @@ export default function RunForm({
     setItemsFound({});
   }, [mapId, maps]);
 
-  // Estatísticas de drop por item do mapa atual
-  const itemDropStats = useMemo(() => {
+  // Total de runs do mapa (incluindo offset)
+  const totalMapRuns = useMemo(() => {
+    const count = runsData.filter((r) => r.mapId === mapId).length;
+    const offset = maps.find((m) => m.id === mapId)?.runsOffset ?? 0;
+    return count + offset;
+  }, [runsData, mapId, maps]);
+
+  // Quantidade total dropada por item no mapa atual (incluindo offset)
+  const itemTotalDrops = useMemo(() => {
     const mapRuns = runsData.filter((r) => r.mapId === mapId);
-    const totalRuns = mapRuns.length || 1;
+    const totals: Record<string, number> = {};
+    for (const run of mapRuns) {
+      for (const found of run.itemsFound ?? []) {
+        totals[found.itemId] = (totals[found.itemId] ?? 0) + Number(found.qty);
+      }
+    }
+    const currentMap = maps.find((m) => m.id === mapId);
+    if (currentMap?.dropOffsets) {
+      for (const [itemId, offset] of Object.entries(currentMap.dropOffsets)) {
+        totals[itemId] = (totals[itemId] ?? 0) + offset;
+      }
+    }
+    return totals;
+  }, [mapId, runsData, maps]);
+
+  // Estatísticas de drop por item do mapa atual
+  // Padrão: (drops reais + dropOffset) / (runs reais + runsOffset) × 100
+  const itemDropStats = useMemo(() => {
+    const effectiveTotal = totalMapRuns || 1;
     const stats: Record<string, number> = {};
     for (const item of mapItems) {
-      let runsWithItem = 0;
-      for (const run of mapRuns) {
-        const found = run.itemsFound?.find((it) => it.itemId === item.id);
-        if (found && Number(found.qty) > 0) runsWithItem++;
-      }
-      stats[item.id] = (runsWithItem / totalRuns) * 100;
+      stats[item.id] = ((itemTotalDrops[item.id] ?? 0) / effectiveTotal) * 100;
     }
     return stats;
-  }, [mapId, mapItems, runsData]);
-
-  // Total de runs do mapa
-  const totalMapRuns = useMemo(() => {
-    return runsData.filter((r) => r.mapId === mapId).length;
-  }, [runsData, mapId]);
+  }, [mapItems, itemTotalDrops, totalMapRuns]);
 
   // Ordena por drop rate
   const sortedItems = useMemo(() => {
@@ -158,7 +173,14 @@ export default function RunForm({
   }
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-8 relative">
+      {/* Background decorativo */}
+      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div className="absolute -top-32 -left-24 w-[500px] h-[500px] bg-blue-700/10 rounded-full blur-[120px]" />
+        <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[400px] h-[400px] bg-indigo-700/8 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 left-1/3 w-[350px] h-[350px] bg-violet-700/8 rounded-full blur-[100px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(30,30,60,0.4)_0%,transparent_70%)]" />
+      </div>
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
@@ -179,10 +201,10 @@ export default function RunForm({
 
       <form onSubmit={handleSubmit}>
         <div className="grid lg:grid-cols-5 gap-8">
-          {/* Sidebar - Seleção de Mapa */}
-          <div className="lg:col-span-1 space-y-6">
+          {/* Sidebar - Seleção de Mapa (direita) */}
+          <div className="lg:col-span-1 lg:order-last space-y-6">
             {/* Card do Mapa Selecionado */}
-            <div className="p-6 rounded-2xl border border-white/10 bg-linear-to-br from-white/5 to-white/2">
+            <div className="p-6 rounded-2xl border border-white/8 bg-white/3 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
               <label className="block text-sm font-medium text-gray-400 uppercase tracking-wide mb-4">
                 Mapa
               </label>
@@ -212,7 +234,7 @@ export default function RunForm({
             </div>
 
             {/* Card de Seleção */}
-            <div className="p-6 rounded-2xl border border-white/10 bg-linear-to-br from-white/5 to-white/2">
+            <div className="p-6 rounded-2xl border border-white/8 bg-white/3 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
               <label className="block text-sm font-medium text-gray-400 uppercase tracking-wide mb-4">
                 Seleção Atual
               </label>
@@ -270,9 +292,8 @@ export default function RunForm({
             </p>
           </div>
 
-          {/* Main Content - Itens */}
-          <div className="lg:col-span-4">
-            <div className="p-8 rounded-2xl border border-white/10 bg-linear-to-br from-white/5 to-white/2">
+          <div className="lg:col-span-4 lg:order-first">
+            <div className="p-8 rounded-2xl border border-white/8 bg-white/2 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-xl font-bold flex items-center gap-3">
                   📦 Itens de <span className="text-blue-400">{selectedMap?.name}</span>
@@ -291,12 +312,13 @@ export default function RunForm({
                   </Link>
                 </div>
               ) : (
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-5">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-6">
                   {sortedItems.map((item) => {
                     const qty = itemsFound[item.id] ?? 0;
                     const checked = qty > 0;
                     const imgSrc = item.imageUrl || `/items/${item.id}.png`;
                     const pct = itemDropStats[item.id] ?? 0;
+                    const totalDrops = itemTotalDrops[item.id] ?? 0;
                     const rarityClass = rarityColor[item.rarity || 'Common'] || rarityColor.Common;
 
                     return (
@@ -319,7 +341,7 @@ export default function RunForm({
                         )}
 
                         {/* Imagem */}
-                        <div className="relative w-full aspect-square mb-3 flex items-center justify-center">
+                        <div className="relative w-full aspect-square mb-3 flex items-center justify-center min-h-[140px]">
                           {item.imageUrl ? (
                             <img
                               src={imgSrc}
@@ -335,8 +357,8 @@ export default function RunForm({
                             <Image
                               src={imgSrc}
                               alt={item.name}
-                              width={120}
-                              height={120}
+                              width={180}
+                              height={180}
                               className={`rounded-xl object-contain transition ${
                                 checked ? '' : 'opacity-80 group-hover:opacity-100'
                               }`}
@@ -354,17 +376,22 @@ export default function RunForm({
 
                         {/* Badges */}
                         <div className="flex items-center justify-between gap-2">
-                          <span className={`text-xs px-2 py-1 rounded-lg border ${rarityClass}`}>
+                          <span className={`text-sm px-2 py-1 rounded-lg border ${rarityClass}`}>
                             {item.rarity || 'Common'}
                           </span>
-                          <span className={`text-xs px-2 py-1 rounded-lg font-mono font-bold ${
-                            pct >= 50 ? 'bg-green-500/20 text-green-300' :
-                            pct >= 20 ? 'bg-yellow-500/20 text-yellow-300' :
-                            pct >= 5 ? 'bg-orange-500/20 text-orange-300' :
-                            'bg-red-500/20 text-red-300'
-                          }`}>
-                            {pct.toFixed(1)}%
-                          </span>
+                          <div className="flex items-center gap-1">
+                            <span className="text-sm px-2 py-0.5 rounded-lg font-mono bg-white/5 text-gray-400">
+                              ×{totalDrops}
+                            </span>
+                            <span className={`text-sm px-2 py-0.5 rounded-lg font-mono font-bold ${
+                              pct >= 50 ? 'bg-green-500/20 text-green-300' :
+                              pct >= 20 ? 'bg-yellow-500/20 text-yellow-300' :
+                              pct >= 5 ? 'bg-orange-500/20 text-orange-300' :
+                              'bg-red-500/20 text-red-300'
+                            }`}>
+                              {pct.toFixed(1)}%
+                            </span>
+                          </div>
                         </div>
                       </button>
                     );

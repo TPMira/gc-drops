@@ -1,0 +1,276 @@
+===============================================================================
+                    ITEM REGISTRY - GUIA DE COMANDOS
+===============================================================================
+
+python .\item_registry.py --watch --skip-empty --export-unknown-to-templates
+
+& C:\Users\mireta\Dev\.venv\Scripts\Activate.ps1
+
+>>> PASSO A PASSO (primeira vez) <<<
+
+  1. Listar monitores disponíveis:
+     python item_registry.py --list-monitors
+
+  2. Calibrar a grade (seleciona a área da grade na tela):
+     python item_registry.py --calibrate --rows 3 --cols 6
+
+  3. Calibrar cada slot individualmente na tela inteira (com zoom):
+     python item_registry.py --calibrate-slot-rois-fullscreen
+     - Scroll do mouse = zoom in/out
+     - Clique do meio = arrastar (pan)
+     - ENTER = confirma seleção
+     - ESC = pula o slot
+     - Salva após cada slot (não perde progresso)
+
+  4. Calibrar a área do nome do mapa:
+     python item_registry.py --calibrate-map
+
+  5. Tirar print do mapa e salvar como template:
+     python item_registry.py --dump-map-crop
+     (salva em output/map_crop.png → renomear e mover pra pasta maps/)
+
+  6. Capturar 1 vez e exportar itens desconhecidos como templates:
+     python item_registry.py --export-unknown-to-templates --skip-empty
+     (salva PNGs na pasta templates/ → renomear os arquivos com nome do item)
+
+  7. Rodar em modo watch (monitoramento contínuo):
+     python item_registry.py --watch
+
+===============================================================================
+
+>>> CALIBRAÇÃO <<<
+
+  --calibrate
+     Abre um screenshot e você seleciona a ROI da grade inteira.
+     Salva no config. Use --rows e --cols junto.
+     Detecta a resolução da tela automaticamente.
+
+  --calibrate-slot-rois-fullscreen
+     Calibra cada slot individualmente no screenshot inteiro.
+     Usa o seletor com zoom (scroll + pan + ESC pra pular).
+     Slots já calibrados aparecem em verde.
+
+  --calibrate-slot ROW,COL
+     Recalibra UM slot específico sem mexer nos outros.
+     Ex: python item_registry.py --calibrate-slot 1,3
+
+  --calibrate-map
+     Seleciona a área do nome do mapa (ex: "Capela da Eternidade").
+     Necessário para identificar o mapa no watch mode.
+
+  --calibrate-slot-inner-roi
+     Seleciona uma ROI fixa DENTRO de cada slot (ex: só o ícone,
+     sem bordas/T2/quantidade). Aplica a todos os slots.
+
+  --calibrate-slot-rois
+     Calibra ROIs POR SLOT, relativo ao slot (não à tela inteira).
+
+  --slot-rois-start N
+     Índice inicial ao calibrar slots (default: 0).
+
+  --slot-rois-count N
+     Quantos slots calibrar (0 = todos, default: 0).
+
+===============================================================================
+
+>>> MONITORAMENTO / CAPTURA <<<
+
+  --watch
+     Fica em loop capturando a tela a cada --interval segundos.
+     Quando detecta a janela de Registro de Item, faz a captura
+     e identifica itens + mapa automaticamente.
+     Salva resultados em drops_log.json e runs_log.json.
+
+  (sem flags de calibração e sem --watch)
+     Captura 1 frame, recorta slots, identifica e salva em --out.
+
+  --skip-empty
+     Não salva imagens de slots vazios.
+
+  --export-unknown-to-templates
+     Slots não vazios que não foram reconhecidos são salvos
+     automaticamente na pasta --templates (pra virar templates).
+
+  --dump-map-crop
+     Salva o recorte do map_roi em output/map_crop.png
+     (pra você renomear e usar como template de mapa).
+
+===============================================================================
+
+>>> VISUALIZAÇÃO / DEBUG <<<
+
+  --show
+     Mostra overlay com a grade e labels sobre o screenshot.
+
+  --preview-grid
+     Captura 1 frame e mostra grid_roi + linhas das células.
+     Útil pra conferir alinhamento. ESC fecha.
+
+  --item-debug
+     Mostra top scores de templates por slot (ajuda a ajustar
+     threshold/mode/pads).
+
+  --item-debug-save
+     Salva o recorte usado no matching em output/item_match_rX_cY.png.
+
+  --map-debug
+     Imprime os top scores de templates de mapa no --watch.
+
+  --compare TEMPLATE SLOT
+     Diagnóstico: compara 2 imagens e imprime scores.
+     Ex: python item_registry.py --compare templates/item.png output/slot_r0_c0.png
+
+===============================================================================
+
+>>> AJUSTES DE GRID / TRIM <<<
+
+  --snap-grid-roi
+     Ajusta automaticamente o grid_roi encaixando nas bordas
+     (corrige erros de 1-20px). Use --snap-grid-roi-margin N (default: 30).
+
+  --set-global-trim LEFT,TOP,RIGHT,BOTTOM
+     Aplica trim em TODOS os slots antes do matching.
+     Ex: --set-global-trim 0,0,1,0  (tira 1px da direita)
+
+  --clear-global-trim
+     Remove global_trim da config.
+
+  --set-row-trims TOP,BOT;TOP,BOT;...
+     Define trim por linha. Ex (3 rows): '0,1;0,0;1,0'
+
+  --clear-row-trims
+     Remove row_trims da config.
+
+  --clear-slot-rois
+     Remove todos os slot_rois da config.
+
+  --recompute-slot-rois-row N
+     Recalcula os slots de uma linha inteira (ex: 2 para r2)
+     usando a média das linhas em --recompute-slot-rois-from-rows (default: 0,1).
+
+===============================================================================
+
+>>> THRESHOLDS / MATCHING <<<
+
+  --template-threshold 0.78
+     Score mínimo (0-1) para aceitar match de template.
+
+  --item-low-threshold 0.80
+     Threshold alternativo quando houver boa margem sobre o 2º lugar.
+
+  --item-min-margin 0.06
+     Margem mínima (best - second) para aceitar match com low-threshold.
+
+  --item-min-score 0.93
+     Score mínimo absoluto; abaixo disso o slot fica "unknown".
+
+  --map-threshold 0.80
+     Score mínimo para identificação do mapa.
+
+  --detect-threshold 0.80
+     Score mínimo para detectar a janela do Registro de Item
+     (usado no --watch).
+
+  --empty-stddev 10.0
+     Desvio padrão abaixo do qual considera slot vazio.
+
+===============================================================================
+
+>>> MODOS DE MATCHING <<<
+
+  --item-mode edge|gray|color
+     Pré-processamento para itens (default: edge).
+
+  --map-mode edge|gray
+     Pré-processamento para mapas (default: edge).
+
+  --detect-mode edge|gray
+     Pré-processamento para detecção da janela (default: edge).
+
+  --item-matcher template|ncc
+     Algoritmo de matching: template (matchTemplate) ou ncc.
+
+  --item-fixed-size 64
+     Tamanho (px) usado no matcher ncc.
+
+===============================================================================
+
+>>> PADDING <<<
+
+  --match-pad 12
+     Padding interno usado APENAS para empty-detect/matching.
+
+  --save-pad 0
+     Padding ao salvar PNGs dos slots.
+
+  --save-pad-top / --save-pad-bottom / --save-pad-left / --save-pad-right
+     Override individual do --save-pad.
+
+  --item-pad 0
+     Padding para comparar templates de item.
+
+  --item-pad-top / --item-pad-bottom / --item-pad-left / --item-pad-right
+     Override individual do --item-pad.
+
+  --item-pad-auto
+     Testa múltiplos pads e escolhe o melhor score.
+
+  --item-pad-candidates 0,12
+     Pads a testar com --item-pad-auto.
+
+  --item-search-pad 6
+     Padding extra para tolerar desalinhamento.
+
+===============================================================================
+
+>>> MULTI-RESOLUÇÃO <<<
+
+  A calibração salva automaticamente a resolução da tela
+  (ex: 1920x1080) no campo "calibrated_resolution" do config.
+
+  Se você rodar em outra resolução (ex: 1024x768), todas as
+  coordenadas dos slots são escaladas proporcionalmente de forma
+  automática, sem precisar recalibrar.
+
+  Basta calibrar uma vez em qualquer resolução e funciona em todas.
+
+===============================================================================
+
+>>> CAMINHOS / SAÍDA <<<
+
+  --config item_registry_config.json
+     Arquivo de configuração (default: item_registry_config.json).
+
+  --templates templates
+     Pasta com templates PNG/JPG dos itens.
+
+  --maps maps
+     Pasta com templates PNG/JPG dos mapas.
+
+  --out output
+     Pasta de saída para slots e results.json.
+
+  --drops-log output/drops_log.json
+     Histórico de drops (array JSON).
+
+  --runs-log output/runs_log.json
+     Log de runs no formato id/mapId/itemsFound/createdAt.
+
+  --detect-template templates/registry_detect.png
+     Imagem usada para detectar se a janela está aberta.
+
+  --export-unknown-name item
+     Nome-base ao exportar desconhecidos (gera: item_N_rX_cY.png).
+
+  --clean
+     Limpa arquivos antigos em --out antes de salvar.
+
+===============================================================================
+
+>>> WATCH MODE - INTERVALOS <<<
+
+  --interval 0.25     Intervalo entre verificações (segundos).
+  --cooldown 2.0      Tempo mínimo entre capturas (segundos).
+  --map-interval 1.0  Intervalo para reavaliar o mapa (segundos).
+
+===============================================================================

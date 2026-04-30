@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="min-h-screen bg-black text-white">
+      <body className="min-h-screen bg-[#08080f] text-white">
         <ToastProvider>
           {children}
         </ToastProvider>

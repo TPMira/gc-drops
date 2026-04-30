@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { readJson, writeJson } from "@/lib/jsondb";
 
 type MapItem = { id: string; name: string; rarity?: string; imageUrl?: string };
-type MapType = { id: string; name: string; imageUrl?: string; items: MapItem[] };
+type MapType = { id: string; name: string; imageUrl?: string; items: MapItem[]; runsOffset?: number; dropOffsets?: Record<string, number> };
 
 // GET - Lista todos os mapas
 export async function GET() {
@@ -59,7 +59,7 @@ export async function POST(req: Request) {
 export async function PUT(req: Request) {
   try {
     const body = await req.json();
-    const { id, name, imageUrl } = body;
+    const { id, name, imageUrl, runsOffset, dropOffsets } = body;
     
     if (!id) {
       return NextResponse.json({ error: "ID do mapa é obrigatório" }, { status: 400 });
@@ -74,6 +74,8 @@ export async function PUT(req: Request) {
 
     if (name) maps[mapIndex].name = name.trim();
     if (imageUrl !== undefined) maps[mapIndex].imageUrl = imageUrl?.trim() || undefined;
+    if (runsOffset !== undefined) maps[mapIndex].runsOffset = Number(runsOffset) || 0;
+    if (dropOffsets !== undefined) maps[mapIndex].dropOffsets = dropOffsets;
 
     await writeJson("maps.json", maps);
 
@@ -101,6 +103,30 @@ export async function DELETE(req: Request) {
     }
 
     await writeJson("maps.json", newMaps);
+
+    return NextResponse.json({ ok: true });
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
+
+// PATCH - Reordenar mapas
+export async function PATCH(req: Request) {
+  try {
+    const body = await req.json();
+    const { mapIds } = body;
+
+    if (!Array.isArray(mapIds)) {
+      return NextResponse.json({ error: "mapIds deve ser um array" }, { status: 400 });
+    }
+
+    const maps: MapType[] = (await readJson("maps.json")) ?? [];
+    const mapById: Record<string, MapType> = Object.fromEntries(maps.map((m) => [m.id, m]));
+
+    const ordered = mapIds.filter((id) => id in mapById).map((id) => mapById[id]);
+    const remaining = maps.filter((m) => !mapIds.includes(m.id));
+
+    await writeJson("maps.json", [...ordered, ...remaining]);
 
     return NextResponse.json({ ok: true });
   } catch (err: any) {

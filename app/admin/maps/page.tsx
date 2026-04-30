@@ -1,11 +1,11 @@
 'use client';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useToast } from '@/app/components/ToastProvider';
 
 type MapItem = { id: string; name: string; rarity?: string; imageUrl?: string };
-type MapType = { id: string; name: string; imageUrl?: string; items: MapItem[] };
+type MapType = { id: string; name: string; imageUrl?: string; items: MapItem[]; runsOffset?: number; dropOffsets?: Record<string, number> };
 
 const rarityOptions = ['Common', 'Uncommon', 'Rare', 'Epic', 'Legendary', 'Mythic', 'Ancestral'];
 
@@ -41,6 +41,81 @@ export default function AdminMapsPage() {
   const [editItemRarity, setEditItemRarity] = useState('');
   const [editItemImage, setEditItemImage] = useState('');
 
+  // Drag & drop state
+  const [dragIndex, setDragIndex] = useState<number | null>(null);
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
+
+  // Offset editing state
+  const [showOffsets, setShowOffsets] = useState(false);
+  const [offsetRuns, setOffsetRuns] = useState('0');
+  const [offsetDrops, setOffsetDrops] = useState<Record<string, string>>({});
+  // Fields for "add more" (delta on top of saved)
+  const [addRuns, setAddRuns] = useState('0');
+  const [addDrops, setAddDrops] = useState<Record<string, string>>({});
+
+  // Image picker state
+  const [showImagePicker, setShowImagePicker] = useState(false);
+  const [publicItems, setPublicItems] = useState<string[]>([]);
+  const [imagePickerTab, setImagePickerTab] = useState<'public' | 'existing'>('public');
+  const [imageSearch, setImageSearch] = useState('');
+  const [uploading, setUploading] = useState(false);
+
+  async function handleUpload(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploading(true);
+    try {
+      const form = new FormData();
+      form.append('file', file);
+      const res = await fetch('/api/maps/public-items', { method: 'POST', body: form });
+      const data = await res.json();
+      if (data?.ok) {
+        notify(`"${data.filename}" enviado!`, 'success');
+        const r = await fetch('/api/maps/public-items');
+        const d = await r.json();
+        if (d?.files) setPublicItems(d.files);
+        const url = `/items/${data.filename}`;
+        setNewItemImage(url);
+        setShowImagePicker(false);
+      } else {
+        notify(data?.error || 'Erro ao enviar', 'error');
+      }
+    } catch (err: any) {
+      notify(err.message, 'error');
+    } finally {
+      setUploading(false);
+      e.target.value = '';
+    }
+  }
+
+  // All unique images from other maps not yet used in the selected map
+  const suggestedImages = useMemo(() => {
+    const currentUrls = new Set(
+      (maps.find((m) => m.id === selectedMapId)?.items ?? []).map((i) => i.imageUrl).filter(Boolean)
+    );
+    const seen = new Set<string>();
+    const result: { url: string; name: string }[] = [];
+    for (const map of maps) {
+      for (const item of map.items) {
+        if (item.imageUrl && !seen.has(item.imageUrl) && !currentUrls.has(item.imageUrl)) {
+          seen.add(item.imageUrl);
+          result.push({ url: item.imageUrl, name: item.name });
+        }
+      }
+    }
+    return result;
+  }, [maps, selectedMapId]);
+
+  // Files from public/items not yet used in the selected map
+  const availablePublicItems = useMemo(() => {
+    const usedPaths = new Set(
+      (maps.find((m) => m.id === selectedMapId)?.items ?? [])
+        .map((i) => i.imageUrl)
+        .filter((u) => u?.startsWith('/items/'))
+    );
+    return publicItems.filter((f) => !usedPaths.has(`/items/${f}`));
+  }, [publicItems, maps, selectedMapId]);
+
   const fetchMaps = useCallback(async () => {
     try {
       const res = await fetch('/api/maps');
@@ -60,9 +135,111 @@ export default function AdminMapsPage() {
 
   useEffect(() => {
     fetchMaps();
+    fetch('/api/maps/public-items')
+      .then((r) => r.json())
+      .then((d) => { if (d?.files) setPublicItems(d.files); })
+      .catch(() => {});
   }, [fetchMaps]);
 
+  // Sync offset inputs when selected map changes
+  useEffect(() => {
+    const map = maps.find((m) => m.id === selectedMapId);
+    if (map) {
+      setOffsetRuns(String(map.runsOffset ?? 0));
+      const drops: Record<string, string> = {};
+      const addD: Record<string, string> = {};
+      for (const item of map.items) {
+        drops[item.id] = String(map.dropOffsets?.[item.id] ?? 0);
+        addD[item.id] = '0';
+      }
+      setOffsetDrops(drops);
+      setAddDrops(addD);
+      setAddRuns('0');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedMapId]);
+
   const selectedMap = maps.find((m) => m.id === selectedMapId);
+
+  // ============ DRAG & DROP HANDLERS ============
+  function handleDragStart(e: React.DragEvent, index: number) {
+    setDragIndex(index);
+    e.dataTransfer.effectAllowed = 'move';
+  }
+
+  function handleDragOver(e: React.DragEvent, index: number) {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    setDragOverIndex(index);
+  }
+
+  function handleDragEnd() {
+    setDragIndex(null);
+    setDragOverIndex(null);
+  }
+
+  async function handleDrop(e: React.DragEvent, dropIndex: number) {
+    e.preventDefault();
+    if (dragIndex === null || dragIndex === dropIndex) {
+      setDragIndex(null);
+      setDragOverIndex(null);
+      return;
+    }
+    const newMaps = [...maps];
+    const [moved] = newMaps.splice(dragIndex, 1);
+    newMaps.splice(dropIndex, 0, moved);
+    setMaps(newMaps);
+    setDragIndex(null);
+    setDragOverIndex(null);
+    try {
+      await fetch('/api/maps', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mapIds: newMaps.map((m) => m.id) }),
+      });
+    } catch (err) {
+      notify('Erro ao salvar ordem', 'error');
+    }
+  }
+
+  // ============ OFFSET HANDLER ============
+  async function handleSaveOffsets(e: React.FormEvent) {
+    e.preventDefault();
+    if (!selectedMapId) return;
+
+    // Accumulate: new total = current saved + delta entered now
+    const newRunsOffset = (parseInt(offsetRuns, 10) || 0) + (parseInt(addRuns, 10) || 0);
+
+    const dropOffsetsData: Record<string, number> = {};
+    for (const item of (selectedMap?.items ?? [])) {
+      const saved = parseInt(offsetDrops[item.id] ?? '0', 10) || 0;
+      const delta = parseInt(addDrops[item.id] ?? '0', 10) || 0;
+      dropOffsetsData[item.id] = saved + delta;
+    }
+
+    try {
+      const res = await fetch('/api/maps', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          id: selectedMapId,
+          runsOffset: newRunsOffset,
+          dropOffsets: dropOffsetsData,
+        }),
+      });
+      const data = await res.json();
+      if (data?.ok) {
+        notify('Contagens ajustadas!', 'success');
+        setAddRuns('0');
+        setAddDrops((prev) => Object.fromEntries(Object.keys(prev).map((k) => [k, '0'])));
+        await fetchMaps();
+      } else {
+        notify(data?.error || 'Erro ao salvar ajustes', 'error');
+      }
+    } catch (err: any) {
+      notify(err.message, 'error');
+    }
+  }
 
   // ============ MAP ACTIONS ============
   async function handleCreateMap(e: React.FormEvent) {
@@ -273,11 +450,20 @@ export default function AdminMapsPage() {
 
           {/* Lista de mapas */}
           <div className="space-y-2 max-h-[60vh] overflow-y-auto">
-            {maps.map((map) => (
+            {maps.map((map, index) => (
               <div
                 key={map.id}
-                className={`p-3 rounded-lg border cursor-pointer transition ${
-                  selectedMapId === map.id
+                draggable
+                onDragStart={(e) => handleDragStart(e, index)}
+                onDragOver={(e) => handleDragOver(e, index)}
+                onDrop={(e) => handleDrop(e, index)}
+                onDragEnd={handleDragEnd}
+                className={`p-3 rounded-lg border cursor-pointer transition select-none ${
+                  dragOverIndex === index && dragIndex !== index
+                    ? 'border-blue-400 bg-blue-400/20 scale-[1.01]'
+                    : dragIndex === index
+                    ? 'opacity-40 border-white/20 bg-white/5'
+                    : selectedMapId === map.id
                     ? 'border-blue-500 bg-blue-500/10'
                     : 'border-white/10 bg-white/5 hover:bg-white/10'
                 }`}
@@ -314,6 +500,13 @@ export default function AdminMapsPage() {
                 ) : (
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
+                      <span
+                        className="text-gray-600 hover:text-gray-400 cursor-grab active:cursor-grabbing text-lg leading-none"
+                        title="Arrastar para reordenar"
+                        onMouseDown={(e) => e.stopPropagation()}
+                      >
+                        ⠿
+                      </span>
                       {map.imageUrl && (
                         <Image
                           src={map.imageUrl}
@@ -365,8 +558,9 @@ export default function AdminMapsPage() {
               {/* Form novo item */}
               <form
                 onSubmit={handleCreateItem}
-                className="p-4 rounded-lg border border-white/10 bg-white/5 grid sm:grid-cols-4 gap-3"
+                className="p-4 rounded-lg border border-white/10 bg-white/5 space-y-3"
               >
+                <div className="grid sm:grid-cols-4 gap-3">
                 <input
                   type="text"
                   placeholder="Nome do item"
@@ -385,23 +579,144 @@ export default function AdminMapsPage() {
                     </option>
                   ))}
                 </select>
-                <input
-                  type="text"
-                  placeholder="URL da imagem (opcional)"
-                  value={newItemImage}
-                  onChange={(e) => setNewItemImage(e.target.value)}
-                  className="px-3 py-2 rounded bg-black/40 border border-white/10 text-sm"
-                />
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="URL da imagem (opcional)"
+                    value={newItemImage}
+                    onChange={(e) => setNewItemImage(e.target.value)}
+                    className="w-full px-3 py-2 rounded bg-black/40 border border-white/10 text-sm"
+                  />
+                </div>
                 <button
                   type="submit"
                   className="px-3 py-2 bg-green-600 hover:bg-green-700 rounded text-sm font-medium"
                 >
                   + Adicionar Item
                 </button>
+                </div>
+
+                {/* Image suggestions */}
+                {(availablePublicItems.length > 0 || suggestedImages.length > 0) && (
+                  <div>
+                    <button
+                      type="button"
+                      onClick={() => { setShowImagePicker((v) => !v); setImageSearch(''); }}
+                      className="text-xs text-blue-400 hover:text-blue-300 flex items-center gap-1"
+                    >
+                      🖼️ {showImagePicker ? 'Ocultar picker' : 'Escolher imagem'}
+                      {availablePublicItems.length > 0 && <span className="text-gray-500">({availablePublicItems.length} locais + {suggestedImages.length} de outros mapas)</span>}
+                    </button>
+                    {showImagePicker && (
+                      <div className="mt-2 rounded bg-black/30 border border-white/10 overflow-hidden">
+                        {/* Tabs */}
+                        <div className="flex border-b border-white/10">
+                          <button
+                            type="button"
+                            onClick={() => setImagePickerTab('public')}
+                            className={`flex-1 px-3 py-2 text-xs font-medium transition ${
+                              imagePickerTab === 'public' ? 'bg-white/10 text-white' : 'text-gray-400 hover:text-white'
+                            }`}
+                          >
+                            📁 /public/items ({availablePublicItems.length})
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setImagePickerTab('existing')}
+                            className={`flex-1 px-3 py-2 text-xs font-medium transition ${
+                              imagePickerTab === 'existing' ? 'bg-white/10 text-white' : 'text-gray-400 hover:text-white'
+                            }`}
+                          >
+                            🗺️ Outros mapas ({suggestedImages.length})
+                          </button>
+                        </div>
+                        {/* Search + Upload */}
+                        <div className="p-2 flex gap-2">
+                          <input
+                            type="text"
+                            placeholder="Filtrar..."
+                            value={imageSearch}
+                            onChange={(e) => setImageSearch(e.target.value)}
+                            className="flex-1 px-2 py-1 rounded bg-black/40 border border-white/10 text-xs"
+                          />
+                          {imagePickerTab === 'public' && (
+                            <label className={`flex items-center gap-1 px-2 py-1 rounded text-xs font-medium cursor-pointer transition ${
+                              uploading ? 'bg-gray-700 text-gray-400' : 'bg-blue-600 hover:bg-blue-700 text-white'
+                            }`}>
+                              {uploading ? '⏳' : '⬆️'} {uploading ? 'Enviando...' : 'Upload'}
+                              <input
+                                type="file"
+                                accept="image/png,image/jpeg,image/webp,image/gif"
+                                className="hidden"
+                                disabled={uploading}
+                                onChange={handleUpload}
+                              />
+                            </label>
+                          )}
+                        </div>
+                        {/* Grid */}
+                        <div className="flex flex-wrap gap-2 max-h-44 overflow-y-scroll p-2 pt-0">
+                          {imagePickerTab === 'public'
+                            ? availablePublicItems
+                                .filter((f) => f.toLowerCase().includes(imageSearch.toLowerCase()))
+                                .map((file) => {
+                                  const url = `/items/${file}`;
+                                  const label = file.replace(/\.[^.]+$/, '');
+                                  return (
+                                    <button
+                                      key={file}
+                                      type="button"
+                                      title={label}
+                                      onClick={() => { setNewItemImage(url); setShowImagePicker(false); }}
+                                      className={`flex flex-col items-center gap-1 p-1 rounded border-2 transition hover:bg-white/10 ${
+                                        newItemImage === url ? 'border-blue-400' : 'border-transparent hover:border-white/20'
+                                      }`}
+                                    >
+                                      <Image
+                                        src={url}
+                                        alt={label}
+                                        width={40}
+                                        height={40}
+                                        className="rounded object-contain bg-black/20"
+                                        onError={(e) => { (e.currentTarget.parentElement as HTMLElement).style.display = 'none'; }}
+                                      />
+                                      <span className="text-[10px] text-gray-400 max-w-14 truncate leading-tight">{label}</span>
+                                    </button>
+                                  );
+                                })
+                            : suggestedImages
+                                .filter((img) => img.name.toLowerCase().includes(imageSearch.toLowerCase()))
+                                .map((img) => (
+                                  <button
+                                    key={img.url}
+                                    type="button"
+                                    title={img.name}
+                                    onClick={() => { setNewItemImage(img.url); setShowImagePicker(false); }}
+                                    className={`flex flex-col items-center gap-1 p-1 rounded border-2 transition hover:bg-white/10 ${
+                                      newItemImage === img.url ? 'border-blue-400' : 'border-transparent hover:border-white/20'
+                                    }`}
+                                  >
+                                    <Image
+                                      src={img.url}
+                                      alt={img.name}
+                                      width={40}
+                                      height={40}
+                                      className="rounded object-contain bg-black/20"
+                                      onError={(e) => { (e.currentTarget.parentElement as HTMLElement).style.display = 'none'; }}
+                                    />
+                                    <span className="text-[10px] text-gray-400 max-w-14 truncate leading-tight">{img.name}</span>
+                                  </button>
+                                ))
+                          }
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
               </form>
 
               {/* Lista de itens */}
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[60vh] overflow-y-auto">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[60vh] overflow-y-scroll">
                 {selectedMap.items.map((item) => (
                   <div
                     key={item.id}
@@ -495,6 +810,83 @@ export default function AdminMapsPage() {
                   <div className="col-span-full text-center py-8 text-gray-500">
                     Nenhum item cadastrado neste mapa.
                   </div>
+                )}
+              </div>
+
+              {/* Ajuste Manual de Contagem */}
+              <div className="mt-6 border border-white/10 rounded-lg overflow-hidden">
+                <button
+                  type="button"
+                  onClick={() => setShowOffsets((v) => !v)}
+                  className="w-full flex items-center justify-between px-4 py-3 bg-white/5 hover:bg-white/10 text-sm font-medium text-gray-300 transition"
+                >
+                  <span>⚙️ Ajuste Manual de Contagem</span>
+                  <span className="text-gray-500">{showOffsets ? '▲' : '▼'}</span>
+                </button>
+                {showOffsets && (
+                  <form onSubmit={handleSaveOffsets} className="p-4 space-y-5 bg-black/20">
+                    <p className="text-xs text-gray-500">
+                      O total acumulado é somado às contagens reais. Digite apenas o valor <span className="text-white font-medium">adicional novo</span> a cada vez — ele será somado ao total já salvo.
+                    </p>
+
+                    {/* Idas */}
+                    <div className="space-y-1">
+                      <div className="text-sm text-gray-400 font-medium">Idas (offset)</div>
+                      <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-1 text-xs text-gray-500 bg-black/30 px-3 py-1.5 rounded border border-white/10">
+                          <span>Total salvo:</span>
+                          <span className="text-white font-bold">{offsetRuns}</span>
+                        </div>
+                        <span className="text-gray-600">+</span>
+                        <input
+                          type="number"
+                          value={addRuns}
+                          onChange={(e) => setAddRuns(e.target.value)}
+                          placeholder="adicionar"
+                          className="w-28 px-3 py-1.5 rounded bg-black/40 border border-white/10 text-sm text-center"
+                          min={0}
+                        />
+                        <span className="text-xs text-gray-500">= <span className="text-white font-bold">{(parseInt(offsetRuns, 10) || 0) + (parseInt(addRuns, 10) || 0)}</span></span>
+                      </div>
+                    </div>
+
+                    {/* Drops por item */}
+                    <div className="space-y-2">
+                      <div className="text-sm text-gray-400 font-medium">Drops extras por item:</div>
+                      <div className="grid sm:grid-cols-2 gap-x-4 gap-y-2 max-h-48 overflow-y-auto pr-1">
+                        {selectedMap.items.map((item) => {
+                          const saved = parseInt(offsetDrops[item.id] ?? '0', 10) || 0;
+                          const delta = parseInt(addDrops[item.id] ?? '0', 10) || 0;
+                          return (
+                            <div key={item.id} className="space-y-0.5">
+                              <span className="text-xs text-gray-400 truncate block" title={item.name}>{item.name}</span>
+                              <div className="flex items-center gap-1.5">
+                                <span className="text-xs text-gray-600 bg-black/30 px-2 py-1 rounded border border-white/10 min-w-9 text-center">{saved}</span>
+                                <span className="text-gray-600 text-xs">+</span>
+                                <input
+                                  type="number"
+                                  value={addDrops[item.id] ?? '0'}
+                                  onChange={(e) =>
+                                    setAddDrops((prev) => ({ ...prev, [item.id]: e.target.value }))
+                                  }
+                                  className="w-16 px-2 py-1 rounded bg-black/40 border border-white/10 text-xs text-center"
+                                  min={0}
+                                />
+                                <span className="text-xs text-gray-500">= <span className="text-white">{saved + delta}</span></span>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded text-sm font-medium"
+                    >
+                      💾 Salvar Ajustes
+                    </button>
+                  </form>
                 )}
               </div>
             </>

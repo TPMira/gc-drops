@@ -1,23 +1,5 @@
 [
   {
-    "id": "torre_da_extincao",
-    "name": "Torre da Extinção",
-    "items": [
-      {
-        "id": "pergaminho_de_propriedade_unica",
-        "name": "Perga 5F",
-        "rarity": "Epic",
-        "imageUrl": "https://media.discordapp.net/attachments/1382413152238440612/1468969937153556510/pergaminho_de_propriedade_unica.png?ex=698745dd&is=6985f45d&hm=568c7d1043d1604fb6f55ae2a67453a60b09c28f83746738a288e43278ffb4a4&=&format=webp&quality=lossless"
-      },
-      {
-        "id": "perf_10f",
-        "name": "Perga 10F",
-        "rarity": "Epic",
-        "imageUrl": "https://media.discordapp.net/attachments/1382413152238440612/1468969937153556510/pergaminho_de_propriedade_unica.png?ex=698745dd&is=6985f45d&hm=568c7d1043d1604fb6f55ae2a67453a60b09c28f83746738a288e43278ffb4a4&=&format=webp&quality=lossless"
-      }
-    ]
-  },
-  {
     "id": "explosao_de_calnat",
     "name": "Explosão de Calnat",
     "items": [
@@ -39,8 +21,7 @@
       {
         "id": "brincos_dimensionais",
         "name": "Brincos Dimensionais",
-        "rarity": "Legendary",
-        "imageUrl": "https://media.discordapp.net/attachments/1382413152238440612/1469423020543180850/image.png?ex=69879a54&is=698648d4&hm=e9a44d7d2ac8b121ed30ad1363401f16baaaab5789ab5b4e7e163feba4885140&=&format=webp&quality=lossless"
+        "rarity": "Legendary"
       },
       {
         "id": "brincos_do_caos",
@@ -61,8 +42,86 @@
         "id": "carta_do_astaroth",
         "name": "Carta do Astaroth",
         "rarity": "Epic"
+      },
+      {
+        "id": "carta_olho",
+        "name": "Carta Olho",
+        "rarity": "Rare"
+      }
+    ],
+    "runsOffset": 94,
+    "dropOffsets": {
+      "brincos_da_ordem": 0,
+      "piercing_da_ordem": 0,
+      "piercing_dimensionais": 0,
+      "brincos_dimensionais": 0,
+      "brincos_do_caos": 1,
+      "piercing_do_caos": 0,
+      "carta_da_bruxa": 0,
+      "carta_do_astaroth": 0,
+      "carta_do_olho": 3
+    }
+  },
+  {
+    "id": "solene",
+    "name": "Solene",
+    "items": [
+      {
+        "id": "caixa_dourada",
+        "name": "Caixa Dourada",
+        "rarity": "Epic",
+        "imageUrl": "/items/caixa_dourada.png"
+      },
+      {
+        "id": "caixa_roxa",
+        "name": "Caixa Roxa",
+        "rarity": "Legendary",
+        "imageUrl": "/items/caixa_roxa.png"
+      },
+      {
+        "id": "perga_de_runa",
+        "name": "Perga de Runa",
+        "rarity": "Epic",
+        "imageUrl": "/items/perga_runa.png"
+      }
+    ],
+    "runsOffset": 162,
+    "dropOffsets": {
+      "caixa_dourada": 22,
+      "caixa_roxa": 4,
+      "perga_de_runa": 5
+    }
+  },
+  {
+    "id": "torre_da_extincao",
+    "name": "Torre da Extinção",
+    "items": [
+      {
+        "id": "pergaminho_de_propriedade_unica",
+        "name": "Perga 5F",
+        "rarity": "Epic"
+      },
+      {
+        "id": "perf_10f",
+        "name": "Perga 10F",
+        "rarity": "Epic"
       }
     ]
+  },
+  {
+    "id": "eclipse",
+    "name": "Eclipse",
+    "items": [
+      {
+        "id": "pergaminho_aleatorio",
+        "name": "Pergaminho Aleatorio",
+        "rarity": "Epic"
+      }
+    ],
+    "runsOffset": 36,
+    "dropOffsets": {
+      "pergaminho_aleatorio": 8
+    }
   },
   {
     "id": "capela_da_eternidade",
@@ -178,6 +237,125 @@
         "id": "carta_executor_do_vazio",
         "name": "Carta Executor do Vazio",
         "rarity": "Epic"
+      }
+    ]
+  },
+  {
+    "id": "templo_do_tempo",
+    "name": "Templo do tempo",
+    "items": [
+      {
+        "id": "brinco",
+        "name": "Brinco",
+        "rarity": "Epic",
+        "imageUrl": "https://cdn.discordapp.com/attachments/1382413152238440612/1469749487437348986/image.png?ex=6988ca60&is=698778e0&hm=2a8cc4e01136baf53e2f9de0eae296654f89c704632137790952f6097a1d8021&"
+      },
+      {
+        "id": "piercing",
+        "name": "Piercing",
+        "rarity": "Epic",
+        "imageUrl": "https://cdn.discordapp.com/attachments/1382413152238440612/1469749689816584378/image.png?ex=6988ca90&is=69877910&hm=e5fb6c1882dd804f435dc8e78da6ee152d41c64f0b8e33304c565d5cc394fa4f&"
+      },
+      {
+        "id": "carta_gaian",
+        "name": "Carta Gaian",
+        "rarity": "Epic",
+        "imageUrl": "https://cdn.discordapp.com/attachments/1382413152238440612/1469749992271904848/image.png?ex=6988cad8&is=69877958&hm=dd206b9914ab46e9e99a216b8963e9f39642e32d4cd1f9bbd6375a28381ffcd6&"
+      },
+      {
+        "id": "brinco_azul",
+        "name": "Brinco azul",
+        "rarity": "Rare",
+        "imageUrl": "https://cdn.discordapp.com/attachments/1382413152238440612/1469749487437348986/image.png?ex=6988ca60&is=698778e0&hm=2a8cc4e01136baf53e2f9de0eae296654f89c704632137790952f6097a1d8021&"
+      },
+      {
+        "id": "piercing_azul",
+        "name": "Piercing azul",
+        "rarity": "Rare",
+        "imageUrl": "https://cdn.discordapp.com/attachments/1382413152238440612/1469749689816584378/image.png?ex=6988ca90&is=69877910&hm=e5fb6c1882dd804f435dc8e78da6ee152d41c64f0b8e33304c565d5cc394fa4f&"
+      },
+      {
+        "id": "carta_molly",
+        "name": "Carta Molly",
+        "rarity": "Rare",
+        "imageUrl": "https://cdn.discordapp.com/attachments/1382413152238440612/1469771232495800432/image.png?ex=6988dea0&is=69878d20&hm=fb540fb5566f84988f9ffa4e73b36f48f1929411aec89a481da9e6e75243c464&"
+      }
+    ]
+  },
+  {
+    "id": "biblioteca_obscura",
+    "name": "Biblioteca Obscura",
+    "items": [
+      {
+        "id": "carta_shubalu",
+        "name": "Carta Shubalu",
+        "rarity": "Epic"
+      },
+      {
+        "id": "arachnia_sanguinaria_grande",
+        "name": "Arachnia sanguinaria grande",
+        "rarity": "Rare"
+      },
+      {
+        "id": "carta_administrador",
+        "name": "Carta Administrador",
+        "rarity": "Rare"
+      },
+      {
+        "id": "carta_arachnia_venenosa_gigante",
+        "name": "Carta Arachnia venenosa gigante",
+        "rarity": "Common"
+      },
+      {
+        "id": "carta_arachnia_sanguinaria",
+        "name": "Carta Arachnia sanguinaria",
+        "rarity": "Common"
+      },
+      {
+        "id": "carta_mordomo_chefe",
+        "name": "Carta Mordomo chefe",
+        "rarity": "Common"
+      },
+      {
+        "id": "carta_arachnia_gigante",
+        "name": "Carta Arachnia gigante",
+        "rarity": "Common"
+      },
+      {
+        "id": "carta_mordomo",
+        "name": "Carta Mordomo",
+        "rarity": "Common"
+      },
+      {
+        "id": "carta_guarda_atirador",
+        "name": "Carta Guarda atirador",
+        "rarity": "Common"
+      }
+    ]
+  },
+  {
+    "id": "teia_de_arachne",
+    "name": "Teia de Arachne",
+    "items": [
+      {
+        "id": "arachnia_venenosa_gigante",
+        "name": "Carta Arachnia Venenosa gigante",
+        "rarity": "Common"
+      },
+      {
+        "id": "carta_arachnia_sanguinaria_gigante",
+        "name": "Carta Arachnia sanguinaria gigante",
+        "rarity": "Common"
+      },
+      {
+        "id": "carta_condessa_arachne",
+        "name": "Carta Condessa Arachne",
+        "rarity": "Epic"
+      },
+      {
+        "id": "carta_arquimago",
+        "name": "Carta Arquimago",
+        "rarity": "Common"
       }
     ]
   }
