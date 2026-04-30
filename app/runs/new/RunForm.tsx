@@ -173,7 +173,7 @@ export default function RunForm({
   }
 
   return (
-    <div className="min-h-screen p-8 relative">
+    <div className="min-h-screen p-4 md:p-6 relative">
       {/* Background decorativo */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute -top-32 -left-24 w-[500px] h-[500px] bg-blue-700/10 rounded-full blur-[120px]" />
@@ -182,36 +182,36 @@ export default function RunForm({
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(30,30,60,0.4)_0%,transparent_70%)]" />
       </div>
       {/* Header */}
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 md:mb-6">
         <div>
-          <h1 className="text-3xl font-bold flex items-center gap-3">
+          <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
             🎮 Registrar Run
           </h1>
-          <p className="text-base text-gray-400 mt-2">
+          <p className="text-xs md:text-base text-gray-400 mt-1 md:mt-2">
             Clique nos itens que droparam. Shift+clique para remover.
           </p>
         </div>
         <Link
           href="/admin/maps"
-          className="text-base text-blue-400 hover:text-blue-300 transition flex items-center gap-2 px-4 py-2 rounded-lg border border-blue-500/30 hover:bg-blue-500/10"
+          className="text-xs md:text-base text-blue-400 hover:text-blue-300 transition flex items-center gap-2 px-3 py-2 rounded-lg border border-blue-500/30 hover:bg-blue-500/10 mt-3 sm:mt-0"
         >
           ⚙️ Gerenciar Mapas
         </Link>
       </div>
 
       <form onSubmit={handleSubmit}>
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-4 gap-4 md:gap-6">
           {/* Sidebar - Seleção de Mapa (direita) */}
-          <div className="lg:col-span-1 lg:order-last space-y-6">
+          <div className="md:col-span-1 md:order-last space-y-3 md:space-y-4">
             {/* Card do Mapa Selecionado */}
-            <div className="p-6 rounded-2xl border border-white/8 bg-white/3 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
-              <label className="block text-sm font-medium text-gray-400 uppercase tracking-wide mb-4">
+            <div className="p-4 rounded-xl border border-white/8 bg-white/3 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+              <label className="block text-xs font-medium text-gray-400 uppercase tracking-wide mb-2">
                 Mapa
               </label>
               <select
                 value={mapId}
                 onChange={(e) => setMapId(e.target.value)}
-                className="w-full px-2 py-4 rounded-xl bg-black/40 border border-white/10 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition text-base"
+                className="w-full px-2 py-2 rounded-lg bg-black/40 border border-white/10 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition text-sm"
               >
                 {maps.map((m: MapType) => (
                   <option key={m.id} value={m.id}>
@@ -221,44 +221,44 @@ export default function RunForm({
               </select>
 
               {/* Info do mapa */}
-              <div className="mt-6 space-y-3">
-                <div className="flex items-center justify-between text-base">
-                  <span className="text-gray-400">Total de Runs</span>
-                  <span className="font-bold text-white text-lg">{totalMapRuns}</span>
+              <div className="mt-3 space-y-2 text-sm">
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-400 text-xs">Total de Runs</span>
+                  <span className="font-bold text-white">{totalMapRuns}</span>
                 </div>
-                <div className="flex items-center justify-between text-base">
-                  <span className="text-gray-400">Itens no Mapa</span>
-                  <span className="font-bold text-white text-lg">{mapItems.length}</span>
+                <div className="flex items-center justify-between">
+                  <span className="text-gray-400 text-xs">Itens no Mapa</span>
+                  <span className="font-bold text-white">{mapItems.length}</span>
                 </div>
               </div>
             </div>
 
             {/* Card de Seleção */}
-            <div className="p-6 rounded-2xl border border-white/8 bg-white/3 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
-              <label className="block text-sm font-medium text-gray-400 uppercase tracking-wide mb-4">
+            <div className="p-4 rounded-xl border border-white/8 bg-white/3 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+              <label className="block text-xs font-medium text-gray-400 uppercase tracking-wide mb-2">
                 Seleção Atual
               </label>
               
               {selectedCount > 0 ? (
-                <div className="space-y-4">
+                <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-4xl font-bold text-white">{selectedCount}</span>
-                    <span className="text-base text-gray-400">item(ns)</span>
+                    <span className="text-2xl md:text-3xl font-bold text-white">{selectedCount}</span>
+                    <span className="text-xs text-gray-400">item(ns)</span>
                   </div>
-                  <div className="flex items-center justify-between text-base">
-                    <span className="text-gray-400">Quantidade total</span>
-                    <span className="font-bold text-blue-400 text-xl">{totalItems}</span>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-gray-400 text-xs">Quantidade total</span>
+                    <span className="font-bold text-blue-400">{totalItems}</span>
                   </div>
                   <button
                     type="button"
                     onClick={clearSelection}
-                    className="w-full px-4 py-3 rounded-xl border border-white/10 hover:bg-white/5 text-base text-gray-300 transition"
+                    className="w-full px-3 py-2 rounded-lg border border-white/10 hover:bg-white/5 text-xs text-gray-300 transition"
                   >
                     🗑️ Limpar Seleção
                   </button>
                 </div>
               ) : (
-                <div className="text-center py-6 text-gray-500 text-base">
+                <div className="text-center py-3 text-gray-500 text-xs">
                   Nenhum item selecionado
                 </div>
               )}
@@ -268,7 +268,7 @@ export default function RunForm({
             <button
               type="submit"
               disabled={status === 'saving'}
-              className={`w-full px-6 py-4 rounded-2xl font-bold text-lg text-white transition flex items-center justify-center gap-3 ${
+              className={`w-full px-4 py-3 rounded-lg font-bold text-sm text-white transition flex items-center justify-center gap-2 ${
                 status === 'saved'
                   ? 'bg-green-600'
                   : status === 'error'
@@ -277,42 +277,42 @@ export default function RunForm({
               } disabled:opacity-60`}
             >
               {status === 'saving' && (
-                <svg className="animate-spin size-6" viewBox="0 0 24 24">
+                <svg className="animate-spin size-4" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
                 </svg>
               )}
-              {status === 'saving' ? 'Salvando...' : status === 'saved' ? '✓ Salvo!' : status === 'error' ? '✕ Erro' : '💾 Salvar Run'}
+              {status === 'saving' ? 'Salvando...' : status === 'saved' ? '✓ Salvo!' : status === 'error' ? '✕ Erro' : '💾 Salvar'}
             </button>
 
-            <p className="text-sm text-gray-500 text-center">
+            <p className="text-xs text-gray-500 text-center">
               {selectedCount === 0
                 ? 'Salvar sem itens = run sem drops'
                 : 'Pronto para salvar!'}
             </p>
           </div>
 
-          <div className="lg:col-span-4 lg:order-first">
-            <div className="p-8 rounded-2xl border border-white/8 bg-white/2 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-xl font-bold flex items-center gap-3">
-                  📦 Itens de <span className="text-blue-400">{selectedMap?.name}</span>
+          <div className="md:col-span-3 md:order-first">
+            <div className="p-4 md:p-6 rounded-xl border border-white/8 bg-white/2 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4">
+                <h2 className="text-lg font-bold flex items-center gap-2">
+                  📦 Itens: <span className="text-blue-400 text-base">{selectedMap?.name}</span>
                 </h2>
-                <span className="text-base text-gray-500">
+                <span className="text-xs text-gray-500 mt-2 sm:mt-0">
                   Ordenado por drop rate
                 </span>
               </div>
 
               {mapItems.length === 0 ? (
-                <div className="text-center py-20 text-gray-500">
-                  <div className="text-6xl mb-4">📭</div>
-                  <p className="text-lg">Este mapa não tem itens cadastrados.</p>
-                  <Link href="/admin/maps" className="text-blue-400 hover:underline text-base mt-3 inline-block">
+                <div className="text-center py-12 text-gray-500">
+                  <div className="text-4xl mb-2">📭</div>
+                  <p className="text-sm">Este mapa não tem itens cadastrados.</p>
+                  <Link href="/admin/maps" className="text-blue-400 hover:underline text-xs mt-2 inline-block">
                     Adicionar itens →
                   </Link>
                 </div>
               ) : (
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-5 gap-6">
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
                   {sortedItems.map((item) => {
                     const qty = itemsFound[item.id] ?? 0;
                     const checked = qty > 0;
@@ -326,7 +326,7 @@ export default function RunForm({
                         key={item.id}
                         type="button"
                         onClick={(e) => handleItemClick(item.id, e)}
-                        className={`group relative p-4 rounded-2xl border transition-all duration-200 text-left ${
+                        className={`group relative p-2 md:p-3 rounded-lg border transition-all duration-200 text-left ${
                           checked
                             ? 'border-blue-500 bg-blue-500/10 ring-2 ring-blue-500/50'
                             : 'border-white/10 bg-white/2 hover:bg-white/5 hover:border-white/20'
@@ -335,18 +335,18 @@ export default function RunForm({
                       >
                         {/* Badge quantidade */}
                         {checked && (
-                          <span className="absolute -top-3 -right-3 z-10 min-w-7 h-7 px-2 flex items-center justify-center rounded-full bg-blue-600 text-white text-sm font-bold shadow-lg">
+                          <span className="absolute -top-2 -right-2 z-10 min-w-6 h-6 px-1 flex items-center justify-center rounded-full bg-blue-600 text-white text-xs font-bold shadow-lg">
                             {qty}
                           </span>
                         )}
 
                         {/* Imagem */}
-                        <div className="relative w-full aspect-square mb-3 flex items-center justify-center min-h-[140px]">
+                        <div className="relative w-full aspect-square mb-2 flex items-center justify-center min-h-[90px] md:min-h-[120px]">
                           {item.imageUrl ? (
                             <img
                               src={imgSrc}
                               alt={item.name}
-                              className={`w-full h-full rounded-xl object-contain transition ${
+                              className={`w-full h-full rounded-lg object-contain transition ${
                                 checked ? '' : 'opacity-80 group-hover:opacity-100'
                               }`}
                               onError={(e) => {
@@ -357,9 +357,9 @@ export default function RunForm({
                             <Image
                               src={imgSrc}
                               alt={item.name}
-                              width={180}
-                              height={180}
-                              className={`rounded-xl object-contain transition ${
+                              width={120}
+                              height={120}
+                              className={`rounded-lg object-contain transition ${
                                 checked ? '' : 'opacity-80 group-hover:opacity-100'
                               }`}
                               onError={(e) => {
@@ -370,20 +370,20 @@ export default function RunForm({
                         </div>
 
                         {/* Nome do item */}
-                        <p className="text-sm font-medium text-white truncate mb-2">
+                        <p className="text-xs md:text-sm font-medium text-white truncate mb-1">
                           {item.name}
                         </p>
 
                         {/* Badges */}
-                        <div className="flex items-center justify-between gap-2">
-                          <span className={`text-sm px-2 py-1 rounded-lg border ${rarityClass}`}>
+                        <div className="flex flex-col gap-1 text-[10px] md:text-xs">
+                          <span className={`px-1.5 py-0.5 rounded border text-center ${rarityClass}`}>
                             {item.rarity || 'Common'}
                           </span>
-                          <div className="flex items-center gap-1">
-                            <span className="text-sm px-2 py-0.5 rounded-lg font-mono bg-white/5 text-gray-400">
+                          <div className="flex items-center gap-0.5">
+                            <span className="px-1 py-0.5 rounded font-mono bg-white/5 text-gray-400 text-[9px] md:text-xs">
                               ×{totalDrops}
                             </span>
-                            <span className={`text-sm px-2 py-0.5 rounded-lg font-mono font-bold ${
+                            <span className={`px-1 py-0.5 rounded font-mono font-bold text-[9px] md:text-xs ${
                               pct >= 50 ? 'bg-green-500/20 text-green-300' :
                               pct >= 20 ? 'bg-yellow-500/20 text-yellow-300' :
                               pct >= 5 ? 'bg-orange-500/20 text-orange-300' :
