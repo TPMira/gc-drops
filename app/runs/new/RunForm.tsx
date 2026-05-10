@@ -23,16 +23,15 @@ const rarityColor: Record<string, string> = {
 };
 
 export default function RunForm({
-  maps,
   characters,
 }: {
-  maps: MapType[];
   characters: Character[];
 }) {
   const { notify } = useToast();
+  const [maps, setMaps] = useState<MapType[]>([]);
   const [selectedCharacterId, setSelectedCharacterId] = useState<string>(characters?.[0]?.id ?? '');
-  const [mapId, setMapId] = useState<string>(maps?.[0]?.id ?? '');
-  const [mapItems, setMapItems] = useState<MapItem[]>(maps?.[0]?.items ?? []);
+  const [mapId, setMapId] = useState<string>('');
+  const [mapItems, setMapItems] = useState<MapItem[]>([]);
   const [itemsFound, setItemsFound] = useState<Record<string, number>>({});
   const [status, setStatus] = useState<Status>('idle');
   const [runsData, setRunsData] = useState<Run[]>([]);
@@ -56,6 +55,24 @@ export default function RunForm({
   useEffect(() => {
     fetchRuns();
   }, [fetchRuns]);
+
+  // Busca mapas do servidor no cliente
+  useEffect(() => {
+    async function loadMaps() {
+      try {
+        const res = await fetch('/api/maps');
+        const data = await res.json();
+        if (data?.maps) {
+          setMaps(data.maps);
+          setMapId((current) => current || data.maps?.[0]?.id || '');
+        }
+      } catch (err) {
+        console.error('Erro ao buscar mapas:', err);
+      }
+    }
+
+    loadMaps();
+  }, []);
 
   useEffect(() => {
     const m = maps.find((mm: MapType) => mm.id === mapId);
@@ -208,16 +225,20 @@ export default function RunForm({
               <label className="block text-xs font-medium text-gray-400 uppercase tracking-wide mb-2">
                 Mapa
               </label>
-              <select
+                      <select
                 value={mapId}
                 onChange={(e) => setMapId(e.target.value)}
                 className="w-full px-2 py-2 rounded-lg bg-black/40 border border-white/10 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition text-sm"
               >
-                {maps.map((m: MapType) => (
-                  <option key={m.id} value={m.id}>
-                    {m.name}
-                  </option>
-                ))}
+                {maps.length === 0 ? (
+                  <option value="">Carregando mapas...</option>
+                ) : (
+                  maps.map((m: MapType) => (
+                    <option key={m.id} value={m.id}>
+                      {m.name}
+                    </option>
+                  ))
+                )}
               </select>
 
               {/* Info do mapa */}
