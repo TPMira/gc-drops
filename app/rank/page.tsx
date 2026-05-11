@@ -8,9 +8,35 @@ import RankBoards, { type AttackRankComputedEntry } from "./RankBoards";
 
 export const dynamic = "force-dynamic";
 
+function toNumber(v: unknown) {
+  const n = Number(v);
+  return Number.isFinite(n) ? n : 0;
+}
+
+function normalizeStats(raw: any): AttackRankEntry["stats"] {
+  // Handle both old and new formats
+  return {
+    attack: toNumber(raw?.attack ?? raw?.attackNormal),
+    critChancePct: toNumber(raw?.critChancePct ?? raw?.critRate),
+    critDamagePct: toNumber(raw?.critDamagePct ?? raw?.critDamage),
+    specialAttack: toNumber(raw?.specialAttack ?? raw?.attackSpecial),
+    backAttackDamagePct: toNumber(raw?.backAttackDamagePct ?? raw?.backAttack),
+  };
+}
+
 export default async function RankPage() {
-  const ranks120 = ((await readJson("attackRanks.json")) ?? []) as AttackRankEntry[];
-  const ranks100 = ((await readJson("attackRanks100.json")) ?? []) as AttackRankEntry[];
+  const rawRanks120 = ((await readJson("attackRanks.json")) ?? []) as any[];
+  const rawRanks100 = ((await readJson("attackRanks100.json")) ?? []) as any[];
+
+  const ranks120: AttackRankEntry[] = rawRanks120.map((e) => ({
+    ...e,
+    stats: normalizeStats(e.stats),
+  }));
+
+  const ranks100: AttackRankEntry[] = rawRanks100.map((e) => ({
+    ...e,
+    stats: normalizeStats(e.stats),
+  }));
 
   const entries120: AttackRankComputedEntry[] = ranks120
     .map((e) => {
