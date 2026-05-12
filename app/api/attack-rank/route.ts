@@ -8,12 +8,14 @@ function toNumber(v: unknown) {
 }
 
 function normalizeStats(stats: Partial<AttackRankStats> | undefined): AttackRankStats {
+  const runeLevel = toNumber(stats?.runeLevel);
   return {
     attack: toNumber(stats?.attack),
     critChancePct: toNumber(stats?.critChancePct),
     critDamagePct: toNumber(stats?.critDamagePct),
     specialAttack: toNumber(stats?.specialAttack),
     backAttackDamagePct: toNumber(stats?.backAttackDamagePct),
+    runeLevel: runeLevel >= 0 && runeLevel <= 2 ? runeLevel : 0,
   };
 }
 

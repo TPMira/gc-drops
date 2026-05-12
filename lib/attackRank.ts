@@ -4,6 +4,7 @@ export type AttackRankStats = {
   critDamagePct: number; // ex: 968.02
   specialAttack: number;
   backAttackDamagePct: number; // ex: 86.90
+  runeLevel?: number; // 0, 1 ou 2 (0% de bonus, 5% ou 10% de atk)
 };
 
 export type AttackRankEntry = {
@@ -24,7 +25,7 @@ export type AttackRankWeights = {
 export const DEFAULT_ATTACK_RANK_WEIGHTS: AttackRankWeights = {
   // Como “Ataque Especial” não é 1:1 com Ataque base em muitos jogos,
   // convertemos uma fração dele para o “Ataque efetivo”. Ajuste conforme seu meta.
-  specialAttackToAttack: 0.25,
+  specialAttackToAttack: 1, //0.25 significa que 4 de Atq Esp equivalem a 1 de Atq base. Ajuste conforme necessário.
 
   // Peso do bônus de costas (1.0 = usa 100% do valor informado)
   backAttackWeight: 1.0,
@@ -60,26 +61,35 @@ export function computeAttackRankScore(
   const backPct = Number(stats.backAttackDamagePct) || 0;
   const critChancePct = Number(stats.critChancePct) || 0;
   const critDamagePct = Number(stats.critDamagePct) || 0;
+  const runeLevel = Number(stats.runeLevel) || 0;
 
-  const effectiveAttack = attack + specialAttack * weights.specialAttackToAttack;
+  // Bônus de runa de raiva: 0 = 0%, 1 = 5%, 2 = 10%
+  const runeBonus = [0, 0.05, 0.1][runeLevel] || 0;
 
-  const backMultiplier = 1 + (backPct / 100) * weights.backAttackWeight;
+  // Ataque base + ataque especial convertido + bônus de runa
+  const baseAttack = (attack + specialAttack * weights.specialAttackToAttack) * (1 + runeBonus);
 
-  const critChance =
-    clamp(critChancePct, 0, weights.critChanceCapPct) / 100;
+  // Chance crítica em decimal (0-1), com cap aplicado
+  const critRate = clamp(critChancePct, 0, weights.critChanceCapPct) / 100;
 
-  // Multiplicador esperado: 1 + chanceCrit * (critDamage%/100)
-  // Ex: 100% crit, 200% => 1 + 1*2 = 3x
-  const critExpectedMultiplier = 1 + critChance * (critDamagePct / 100) * weights.critWeight;
+  // Dano crítico em decimal
+  const critDamage = critDamagePct / 100;
 
-  const score = effectiveAttack * backMultiplier * critExpectedMultiplier;
+  // Dano por trás em percentual
+  const backAttack = backPct;
+
+  // Valor esperado do crítico: prob_crit × bônus_crit
+  // Ex: 85% crit + 300% critDmg → ×(1 + 0.85 × 3.0) = ×3.55
+  const score = baseAttack * (1 + critRate * critDamage) * (1 + backAttack / 100);
 
   return {
-    score,
+    score: Math.round(score * 100) / 100,
     breakdown: {
-      effectiveAttack,
-      backMultiplier,
-      critExpectedMultiplier,
+      baseAttack,
+      critRate,
+      critDamage,
+      backAttack,
+      runeBonus,
       critChanceCappedPct: clamp(critChancePct, 0, weights.critChanceCapPct),
     },
   };

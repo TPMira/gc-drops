@@ -13,6 +13,7 @@ type FormState = {
   critDamagePct: string;
   specialAttack: string;
   backAttackDamagePct: string;
+  runeLevel: string;
 };
 
 function toNumberString(v: string) {
@@ -28,6 +29,7 @@ function toForm(entry: AttackRankEntry): FormState {
     critDamagePct: String(entry.stats?.critDamagePct ?? ""),
     specialAttack: String(entry.stats?.specialAttack ?? ""),
     backAttackDamagePct: String(entry.stats?.backAttackDamagePct ?? ""),
+    runeLevel: String(entry.stats?.runeLevel ?? "0"),
   };
 }
 
@@ -110,6 +112,7 @@ export default function AttackRankRowActions({
       critDamagePct: Number(toNumberString(form.critDamagePct)) || 0,
       specialAttack: Number(toNumberString(form.specialAttack)) || 0,
       backAttackDamagePct: Number(toNumberString(form.backAttackDamagePct)) || 0,
+      runeLevel: Number(form.runeLevel) || 0,
     };
 
     setLoading(true);
@@ -269,6 +272,19 @@ export default function AttackRankRowActions({
                       onChange={(e) => setForm((s) => ({ ...s, backAttackDamagePct: e.target.value }))}
                       placeholder="86.90"
                     />
+                  </label>
+
+                  <label className="text-sm">
+                    <div className="text-gray-300 mb-1">Runa de Raiva</div>
+                    <select
+                      className="w-full rounded bg-black/30 border border-white/10 px-3 py-2 text-sm"
+                      value={form.runeLevel}
+                      onChange={(e) => setForm((s) => ({ ...s, runeLevel: e.target.value }))}
+                    >
+                      <option value="0">0 - 0% ATK</option>
+                      <option value="1">1 - 5% ATK</option>
+                      <option value="2">2 - 10% ATK</option>
+                    </select>
                   </label>
 
                   <div className="md:col-span-2 flex items-center justify-between gap-3 mt-2">

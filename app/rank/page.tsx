@@ -15,12 +15,14 @@ function toNumber(v: unknown) {
 
 function normalizeStats(raw: any): AttackRankEntry["stats"] {
   // Handle both old and new formats
+  const runeLevel = toNumber(raw?.runeLevel);
   return {
     attack: toNumber(raw?.attack ?? raw?.attackNormal),
     critChancePct: toNumber(raw?.critChancePct ?? raw?.critRate),
     critDamagePct: toNumber(raw?.critDamagePct ?? raw?.critDamage),
     specialAttack: toNumber(raw?.specialAttack ?? raw?.attackSpecial),
     backAttackDamagePct: toNumber(raw?.backAttackDamagePct ?? raw?.backAttack),
+    runeLevel: runeLevel >= 0 && runeLevel <= 2 ? runeLevel : 0,
   };
 }
 

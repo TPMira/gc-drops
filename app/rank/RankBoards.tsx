@@ -302,6 +302,9 @@ export default function RankBoards({
                   <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3">
                     <SortHeader label="🗡️ Costas%" sortKey="backAttackDamagePct" align="right" />
                   </th>
+                  <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">
+                    <div className="text-gray-300">😡 Runa</div>
+                  </th>
                   <th className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3">
                     <SortHeader label="🏆 Score" sortKey="score" align="right" />
                   </th>
@@ -328,6 +331,11 @@ export default function RankBoards({
                     <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">{e.stats.specialAttack}</td>
                     <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right tabular-nums">
                       {e.stats.backAttackDamagePct.toFixed(2)}%
+                    </td>
+                    <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-center">
+                      <div className="inline-block px-2 py-1 rounded bg-black/40 border border-white/10 text-sm font-semibold">
+                        {e.stats.runeLevel || 0} {e.stats.runeLevel === 1 ? "(+5%)" : e.stats.runeLevel === 2 ? "(+10%)" : "(+0%)"}
+                      </div>
                     </td>
                     <td className="border border-white/10 px-3 py-2 lg:px-4 lg:py-3 text-right font-bold text-amber-200 tabular-nums">
                       {Math.round(e.score).toLocaleString()}
